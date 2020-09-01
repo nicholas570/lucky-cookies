@@ -1,0 +1,121 @@
+{
+  "main": {
+    "brand": "Lucky Cookies",
+    "motto": "I got 99 problems but a cookie ain't one",
+    "description": "Cookie bakery & coffee shop",
+    "adress": {
+      "place": "Ile de Nantes",
+      "street": "2 rue Louis Blanc",
+      "city": "Nantes",
+      "zip": "44000"
+    },
+    "contact": {
+      "mail": "contact@luckycookies.com",
+      "phone": "+33 (0)2 5116303"
+    },
+    "social": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com",
+        "className": "fa fa-instagram"
+      }
+    ],
+    "offers": ["Cookies", "Coffees & teas", "lunch", "brunch", "Take-away"],
+    "openings": {
+      "days": "7/7",
+      "hours": "8:00 - 18-00"
+    }
+  },
+  "content": {
+    "location": "We are located right at the heart of the Nantes creative district on Ile de Nantes. Surrounded by urban farms, fine art and design schools, artists studios, start-ups incubators and “Les Machines de l’Ile” wonderful attractions. ",
+    "what": "We’re home for creativity at the intersection between gastronomy and ecology. Bakery, café, eatery and creative space, Maison Arlot Cheng offers a new take on simple food. ",
+    "where to find us": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates. ",
+    "partners": [
+      "Ô Bocal ",
+      "Epicerie Equitable",
+      "Epicerie Mangi",
+      "Le Café du Cinéma",
+      "Biocoop République",
+      "L'Absence"
+    ]
+  },
+  "shop": {
+    "description": "We are cookie, coffee and tea expert. Here tou can order and pay online. Orders have to be made before 8pm for the next day, can be taken at the shop or delivered subject to availability. Delivered only in city center (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Chantiers Navals, Gare)",
+    "partners text": "Our cookies are also available at our friends shops. ",
+    "partners": [
+      "Ô Bocal ",
+      "Epicerie Equitable",
+      "Epicerie Mangi",
+      "Le Café du Cinéma",
+      "Biocoop République",
+      "L'Absence"
+    ],
+    "goods": [
+      {
+        "name": "Chocolat chip",
+        "price": "2 euros",
+        "pic": "cookie.jpg"
+      },
+      {
+        "name": "Salted caramel",
+        "price": "2 euros",
+        "pic": "cookie2.jpg"
+      },
+      {
+        "name": "Chocolat & macadamia nuts",
+        "price": "2.70 euros",
+        "pic": "cookie3.jpg"
+      },
+      {
+        "name": "100% chocolat & tonka",
+        "price": "2.70 euros",
+        "pic": "cookie4.jpg"
+      },
+      {
+        "name": "Chocolat & salted caramel",
+        "price": "3 euros",
+        "pic": "cookie5.jpg"
+      },
+      {
+        "name": "Salted caramel 250gr",
+        "price": "4.50 euros",
+        "pic": "caramel.jpg"
+      },
+      {
+        "name": "Dark roast 100% arabica 500gr",
+        "price": "8 euros",
+        "pic": "coffee.jpg"
+      },
+      {
+        "name": "Fazenda Rio Verde 100% arabica 500gr",
+        "price": "9.90 euros",
+        "pic": "coffee2.jpg"
+      },
+      {
+        "name": "Amity Brothers 100% robusta 500gr",
+        "price": "10.50 euros",
+        "pic": "coffee3.jpg"
+      },
+      {
+        "name": "Japanese mocha 500gr",
+        "price": "6.50 euros",
+        "pic": "tea.jpg"
+      },
+      {
+        "name": "Detox 10x100gr",
+        "price": "16 euros",
+        "pic": "tea2.jpg"
+      },
+      {
+        "name": "Bag Cafés Do Brasil",
+        "price": "4 euros",
+        "pic": "tote.jpg"
+      }
+    ]
+  }
+}

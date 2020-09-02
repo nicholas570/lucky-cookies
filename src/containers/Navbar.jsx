@@ -28,7 +28,9 @@ function NavbarComponent() {
         expand="md"
       >
         <NavbarToggler onClick={toggle} />
-        <NavbarText className="text-dark ">Homemade, simply & daily</NavbarText>
+        <NavbarText className="text-dark d-none d-md-block">
+          Homemade, simply & daily
+        </NavbarText>
         <NavbarBrand href="/">
           <h3 className="font-weight-bold text-dark">Lucky Cookies</h3>
           <NavbarText className="text-dark">

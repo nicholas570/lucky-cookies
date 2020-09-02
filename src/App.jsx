@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import Router from './Routerz';
+
+import './scss/app.scss';
 import './App.css';
 
 function App() {
@@ -32,7 +35,9 @@ function App() {
       content={content}
       shop={shop}
       goods={goods}
-    />
+    >
+      <Router />
+    </div>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -14,7 +15,9 @@ import {
 
 import style from '../css/home/navbar.module.css';
 
-function NavbarComponent() {
+function NavbarComponent(props) {
+  const { main } = props;
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -29,13 +32,11 @@ function NavbarComponent() {
       >
         <NavbarToggler onClick={toggle} />
         <NavbarText className="text-dark d-none d-md-block">
-          Homemade, simply & daily
+          {main.motto}
         </NavbarText>
         <NavbarBrand href="/">
-          <h3 className="font-weight-bold text-dark">Lucky Cookies</h3>
-          <NavbarText className="text-dark">
-            Cookie bakery - Coffee shop
-          </NavbarText>
+          <h3 className="font-weight-bold text-dark">{main.brand}</h3>
+          <NavbarText className="text-dark">{main.description}</NavbarText>
         </NavbarBrand>
         <Collapse className={style.container} isOpen={isOpen} navbar>
           <Nav navbar>
@@ -65,5 +66,9 @@ function NavbarComponent() {
     </div>
   );
 }
+
+NavbarComponent.propTypes = {
+  main: PropTypes.shape.isRequired,
+};
 
 export default NavbarComponent;

@@ -19,7 +19,7 @@ function App() {
         setMain(res.data.main);
         setContent(res.data.content);
         setShop(res.data.shop);
-        setGoods(res.data.goods);
+        setGoods(res.data.shop.goods);
       })
       .catch((err) => alert(err.message));
   };
@@ -29,14 +29,8 @@ function App() {
   }, []);
 
   return (
-    <div
-      className="App"
-      main={main}
-      content={content}
-      shop={shop}
-      goods={goods}
-    >
-      <Router />
+    <div className="App">
+      <Router main={main} content={content} shop={shop} goods={goods} />
     </div>
   );
 }

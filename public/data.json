@@ -13,24 +13,18 @@
       "mail": "contact@luckycookies.com",
       "phone": "+33 (0)2 5116303"
     },
-    "social": [
-      {
-        "name": "Facebook",
-        "url": "https://www.facebook.com",
-        "className": "fa fa-facebook"
-      },
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com",
-        "className": "fa fa-instagram"
-      }
-    ],
-    "offers": ["Cookies", "Coffees & teas", "lunch", "brunch", "Take-away"],
     "openings": {
       "days": "7/7",
       "hours": "8:00 - 18-00"
     }
   },
+  "offers": [
+    { "id": 1, "name": "Cookies" },
+    { "id": 2, "name": "Coffees & teas" },
+    { "id": 3, "name": "lunch" },
+    { "id": 4, "name": "brunch" },
+    { "id": 5, "name": "take-away" }
+  ],
   "content": {
     "location": "We are located right at the heart of the Nantes creative district on Ile de Nantes. Surrounded by urban farms, fine art and design schools, artists studios, start-ups incubators and “Les Machines de l’Ile” wonderful attractions. ",
     "what": "We’re home for creativity at the intersection between gastronomy and ecology. Bakery, café, eatery and creative space, Maison Arlot Cheng offers a new take on simple food. ",

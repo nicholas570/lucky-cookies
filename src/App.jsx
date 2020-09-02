@@ -12,6 +12,7 @@ function App() {
   const [shop, setShop] = useState([]);
   const [goods, setGoods] = useState([]);
   const [pics, setPics] = useState([]);
+  const [offers, setOffers] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -22,6 +23,7 @@ function App() {
         setShop(res.data.shop);
         setGoods(res.data.shop.goods);
         setPics(res.data.pics_carousel);
+        setOffers(res.data.offers);
       })
       .catch((err) => alert(err.message));
   };
@@ -38,6 +40,7 @@ function App() {
         shop={shop}
         goods={goods}
         pics={pics}
+        offers={offers}
       />
     </div>
   );

@@ -13,7 +13,7 @@ import {
   NavbarText,
 } from 'reactstrap';
 
-import style from '../css/home/navbar.module.css';
+import style from '../../css/home/navbar.module.css';
 
 function NavbarComponent(props) {
   const { main } = props;
@@ -35,7 +35,7 @@ function NavbarComponent(props) {
           {main.motto}
         </NavbarText>
         <NavbarBrand href="/">
-          <h3 className="font-weight-bold text-dark">{main.brand}</h3>
+          <h4 className="font-weight-bold text-dark">{main.brand}</h4>
           <NavbarText className="text-dark">{main.description}</NavbarText>
         </NavbarBrand>
         <Collapse className={style.container} isOpen={isOpen} navbar>

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './views/Home';
 
 function Routerz(props) {
-  const { main, content, shop, goods, pics, offers } = props;
+  const { main, content, shop, goods, pics, offers, address } = props;
 
   return (
     <Router>
@@ -18,6 +18,7 @@ function Routerz(props) {
             goods={goods}
             pics={pics}
             offers={offers}
+            address={address}
           />
         </Route>
       </Switch>
@@ -32,6 +33,7 @@ Routerz.propTypes = {
   goods: PropTypes.shape.isRequired,
   pics: PropTypes.shape.isRequired,
   offers: PropTypes.shape.isRequired,
+  address: PropTypes.shape.isRequired,
 };
 
 export default Routerz;

@@ -7,7 +7,11 @@ function Offers(props) {
   return (
     <div>
       {offers.map((offer) => {
-        return <p className="font-weight-bold m-0">{offer.name}</p>;
+        return (
+          <p className="font-weight-bold m-0" key={offer.id}>
+            {offer.name}
+          </p>
+        );
       })}
     </div>
   );

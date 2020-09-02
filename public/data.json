@@ -3,12 +3,6 @@
     "brand": "Lucky Cookies",
     "motto": "Homemade food & brewed coffee",
     "description": "Cookie bakery & coffee shop",
-    "address": {
-      "place": "Ile de Nantes",
-      "street": "2 rue Louis Blanc",
-      "city": "Nantes",
-      "zip": "44000"
-    },
     "contact": {
       "mail": "contact@luckycookies.com",
       "phone": "+33 (0)2 5116303"
@@ -17,6 +11,12 @@
       "days": "7/7",
       "hours": "8:00 - 18-00"
     }
+  },
+  "address": {
+    "place": "Ile de Nantes",
+    "street": "2 rue Louis Blanc",
+    "city": "Nantes",
+    "zip": "44000"
   },
   "offers": [
     { "id": 1, "name": "Cookies" },

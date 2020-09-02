@@ -11,6 +11,7 @@ function App() {
   const [content, setContent] = useState([]);
   const [shop, setShop] = useState([]);
   const [goods, setGoods] = useState([]);
+  const [pics, setPics] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -20,6 +21,7 @@ function App() {
         setContent(res.data.content);
         setShop(res.data.shop);
         setGoods(res.data.shop.goods);
+        setPics(res.data.pics_carousel);
       })
       .catch((err) => alert(err.message));
   };
@@ -30,7 +32,13 @@ function App() {
 
   return (
     <div className="App">
-      <Router main={main} content={content} shop={shop} goods={goods} />
+      <Router
+        main={main}
+        content={content}
+        shop={shop}
+        goods={goods}
+        pics={pics}
+      />
     </div>
   );
 }

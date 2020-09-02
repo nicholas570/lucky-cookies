@@ -44,6 +44,19 @@
       "L'Absence"
     ]
   },
+  "pics_carousel": [
+    { "id": 1, "image": "baker.jpg" },
+    { "id": 2, "image": "ambiance.jpg" },
+    { "id": 3, "image": "brunch.jpg" },
+    { "id": 4, "image": "brunch2.jpg" },
+    { "id": 5, "image": "cake.jpg" },
+    { "id": 6, "image": "coffee.jpg" },
+    { "id": 7, "image": "lunch.jpg" },
+    { "id": 8, "image": "coffee2.jpg" },
+    { "id": 9, "image": "cookie-dough.jpg" },
+    { "id": 10, "image": "milky.jpg" },
+    { "id": 11, "image": "tart.jpg" }
+  ],
   "shop": {
     "description": "We are cookie, coffee and tea expert. Here tou can order and pay online. Orders have to be made before 8pm for the next day, can be taken at the shop or delivered subject to availability. Delivered only in city center (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Chantiers Navals, Gare)",
     "partners text": "Our cookies are also available at our friends shops. ",

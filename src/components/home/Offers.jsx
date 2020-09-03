@@ -5,7 +5,7 @@ function Offers(props) {
   const { offers } = props;
 
   return (
-    <div>
+    <div className="mt-5">
       {offers.map((offer) => {
         return (
           <p className="font-weight-bold m-0" key={offer.id}>

@@ -2,15 +2,15 @@
   "main": {
     "brand": "Lucky Cookies",
     "motto": "Homemade food & brewed coffee",
-    "description": "Cookie bakery & coffee shop",
-    "contact": {
-      "mail": "contact@luckycookies.com",
-      "phone": "+33 (0)2 5116303"
-    },
-    "openings": {
-      "days": "7/7",
-      "hours": "8:00 - 18-00"
-    }
+    "description": "Cookie bakery & coffee shop"
+  },
+  "contacts": {
+    "mail": "contact@luckycookies.com",
+    "phone": "+33 (0)2 5116303"
+  },
+  "openings": {
+    "days": "7/7",
+    "hours": "8:00 - 18-00"
   },
   "address": {
     "place": "Ile de Nantes",

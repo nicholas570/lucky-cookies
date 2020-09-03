@@ -14,6 +14,7 @@ function App() {
   const [pics, setPics] = useState([]);
   const [offers, setOffers] = useState([]);
   const [address, setAddress] = useState([]);
+  const [contacts, setContacts] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -26,6 +27,7 @@ function App() {
         setPics(res.data.pics_carousel);
         setOffers(res.data.offers);
         setAddress(res.data.address);
+        setContacts(res.data.contacts);
       })
       .catch((err) => alert(err.message));
   };
@@ -44,6 +46,7 @@ function App() {
         pics={pics}
         offers={offers}
         address={address}
+        contacts={contacts}
       />
     </div>
   );

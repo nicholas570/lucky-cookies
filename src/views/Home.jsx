@@ -6,13 +6,13 @@ import Carousel from '../components/home/Carousel';
 import MainInfo from '../containers/home/MainInfo';
 
 function Home(props) {
-  const { main, pics, offers, address } = props;
+  const { main, pics, offers, address, contacts } = props;
 
   return (
     <>
       <Navbar main={main} />
       <Carousel pics={pics} />
-      <MainInfo address={address} offers={offers} />
+      <MainInfo address={address} offers={offers} contacts={contacts} />
     </>
   );
 }
@@ -22,6 +22,7 @@ Home.propTypes = {
   pics: PropTypes.shape.isRequired,
   offers: PropTypes.shape.isRequired,
   address: PropTypes.shape.isRequired,
+  contacts: PropTypes.shape.isRequired,
 };
 
 export default Home;

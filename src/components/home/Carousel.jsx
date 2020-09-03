@@ -14,7 +14,7 @@ function CarouselComponent(props) {
             <img
               className="d-block w-100 h-75"
               src={`/assets/images/caroussel/${pic.image}`}
-              alt="First slide"
+              alt={pic.id}
             />
           </Carousel.Item>
         );
@@ -24,7 +24,7 @@ function CarouselComponent(props) {
 }
 
 CarouselComponent.propTypes = {
-  pics: PropTypes.arrayOf(PropTypes.string).isRequired,
+  pics: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default CarouselComponent;

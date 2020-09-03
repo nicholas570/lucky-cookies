@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Navbar from '../containers/general/Navbar';
 import Carousel from '../components/home/Carousel';
 import MainInfo from '../containers/home/MainInfo';
+import Pics from '../containers/home/Pics';
 
 function Home(props) {
   const { main, pics, offers, address, contacts } = props;
@@ -13,6 +14,7 @@ function Home(props) {
       <Navbar main={main} />
       <Carousel pics={pics} />
       <MainInfo address={address} offers={offers} contacts={contacts} />
+      <Pics />
     </>
   );
 }

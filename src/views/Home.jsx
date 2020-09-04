@@ -5,9 +5,10 @@ import Navbar from '../containers/general/Navbar';
 import Carousel from '../components/home/Carousel';
 import MainInfo from '../containers/home/MainInfo';
 import Pics from '../containers/home/Pics';
+import Content from '../containers/home/Content';
 
 function Home(props) {
-  const { main, pics, offers, address, contacts } = props;
+  const { main, content, pics, offers, address, contacts } = props;
 
   return (
     <>
@@ -15,6 +16,7 @@ function Home(props) {
       <Carousel pics={pics} />
       <MainInfo address={address} offers={offers} contacts={contacts} />
       <Pics />
+      <Content content={content} />
     </>
   );
 }
@@ -25,6 +27,7 @@ Home.propTypes = {
   offers: PropTypes.shape.isRequired,
   address: PropTypes.shape.isRequired,
   contacts: PropTypes.shape.isRequired,
+  content: PropTypes.shape.isRequired,
 };
 
 export default Home;

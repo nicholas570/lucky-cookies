@@ -1,7 +1,7 @@
 {
   "main": {
     "brand": "Lucky Cookies",
-    "motto": "Homemade food & brewed coffee",
+    "motto": "Homemade food, brewed teas & coffees",
     "description": "Cookie bakery & coffee shop"
   },
   "contacts": {
@@ -26,8 +26,10 @@
     { "id": 5, "name": "take-away" }
   ],
   "content": {
+    "slogan": "Homemade food, brewed teas & coffees",
+    "slogan2": "Daily baked cookies & lunch",
     "location": "We are located right at the heart of the Nantes creative district on Ile de Nantes. Surrounded by urban farms, fine art and design schools, artists studios, start-ups incubators and “Les Machines de l’Ile” wonderful attractions. ",
-    "what": "We’re home for creativity at the intersection between gastronomy and ecology. Bakery, café, eatery and creative space, Maison Arlot Cheng offers a new take on simple food. ",
+    "what": "We’re home for creativity at the intersection between gastronomy and ecology. Cookie Bakery, café, eatery and creative space, Lucky Cookies offers a new take on simple food. ",
     "where to find us": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates. ",
     "partners": [
       "Ô Bocal ",

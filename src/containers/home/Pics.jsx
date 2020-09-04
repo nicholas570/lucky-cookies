@@ -10,7 +10,7 @@ function Pics() {
         className="mr-md-5 mb-5 mt-5 h-50"
         src="/assets/images/home/chairs.jpg"
       />
-      <Image src="/assets/images/home/coffeeBean.jpg" />
+      <Image className="ml-md-5" src="/assets/images/home/coffeeBean.jpg" />
     </Container>
   );
 }

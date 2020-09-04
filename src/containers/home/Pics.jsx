@@ -5,9 +5,9 @@ import Image from 'react-bootstrap/Image';
 
 function Pics() {
   return (
-    <Container className="d-flex flex-column flex-md-row w-75">
+    <Container className="d-flex flex-column flex-md-row">
       <Image
-        className="d-none d-md-block mr-5 mt-5 h-50"
+        className="mr-md-5 mb-5 mt-5 h-50"
         src="/assets/images/home/chairs.jpg"
       />
       <Image src="/assets/images/home/coffeeBean.jpg" />

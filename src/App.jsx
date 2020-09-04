@@ -15,6 +15,7 @@ function App() {
   const [offers, setOffers] = useState([]);
   const [address, setAddress] = useState([]);
   const [contacts, setContacts] = useState([]);
+  const [openings, setOpenings] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -23,11 +24,12 @@ function App() {
         setMain(res.data.main);
         setContent(res.data.content);
         setShop(res.data.shop);
-        setGoods(res.data.shop.goods);
+        setGoods(res.data.goods);
         setPics(res.data.pics_carousel);
         setOffers(res.data.offers);
         setAddress(res.data.address);
         setContacts(res.data.contacts);
+        setOpenings(res.data.openings);
       })
       .catch((err) => alert(err.message));
   };
@@ -47,6 +49,7 @@ function App() {
         offers={offers}
         address={address}
         contacts={contacts}
+        openings={openings}
       />
     </div>
   );

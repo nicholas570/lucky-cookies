@@ -62,68 +62,68 @@
       "Le Café du Cinéma",
       "Biocoop République",
       "L'Absence"
-    ],
-    "goods": [
-      {
-        "name": "Chocolat chip",
-        "price": "2 euros",
-        "pic": "cookie.jpg"
-      },
-      {
-        "name": "Salted caramel",
-        "price": "2 euros",
-        "pic": "cookie2.jpg"
-      },
-      {
-        "name": "Chocolat & macadamia nuts",
-        "price": "2.70 euros",
-        "pic": "cookie3.jpg"
-      },
-      {
-        "name": "100% chocolat & tonka",
-        "price": "2.70 euros",
-        "pic": "cookie4.jpg"
-      },
-      {
-        "name": "Chocolat & salted caramel",
-        "price": "3 euros",
-        "pic": "cookie5.jpg"
-      },
-      {
-        "name": "Salted caramel 250gr",
-        "price": "4.50 euros",
-        "pic": "caramel.jpg"
-      },
-      {
-        "name": "Dark roast 100% arabica 500gr",
-        "price": "8 euros",
-        "pic": "coffee.jpg"
-      },
-      {
-        "name": "Fazenda Rio Verde 100% arabica 500gr",
-        "price": "9.90 euros",
-        "pic": "coffee2.jpg"
-      },
-      {
-        "name": "Amity Brothers 100% robusta 500gr",
-        "price": "10.50 euros",
-        "pic": "coffee3.jpg"
-      },
-      {
-        "name": "Japanese mocha 500gr",
-        "price": "6.50 euros",
-        "pic": "tea.jpg"
-      },
-      {
-        "name": "Detox 10x100gr",
-        "price": "16 euros",
-        "pic": "tea2.jpg"
-      },
-      {
-        "name": "Bag Cafés Do Brasil",
-        "price": "4 euros",
-        "pic": "tote.jpg"
-      }
     ]
-  }
+  },
+  "goods": [
+    {
+      "name": "Chocolat chip",
+      "price": "2 euros",
+      "pic": "cookie.jpg"
+    },
+    {
+      "name": "Salted caramel",
+      "price": "2 euros",
+      "pic": "cookie2.jpg"
+    },
+    {
+      "name": "Chocolat & macadamia nuts",
+      "price": "2.70 euros",
+      "pic": "cookie3.jpg"
+    },
+    {
+      "name": "100% chocolat & tonka",
+      "price": "2.70 euros",
+      "pic": "cookie4.jpg"
+    },
+    {
+      "name": "Chocolat & salted caramel",
+      "price": "3 euros",
+      "pic": "cookie5.jpg"
+    },
+    {
+      "name": "Salted caramel 250gr",
+      "price": "4.50 euros",
+      "pic": "caramel.jpg"
+    },
+    {
+      "name": "Dark roast 100% arabica 500gr",
+      "price": "8 euros",
+      "pic": "coffee.jpg"
+    },
+    {
+      "name": "Fazenda Rio Verde 100% arabica 500gr",
+      "price": "9.90 euros",
+      "pic": "coffee2.jpg"
+    },
+    {
+      "name": "Amity Brothers 100% robusta 500gr",
+      "price": "10.50 euros",
+      "pic": "coffee3.jpg"
+    },
+    {
+      "name": "Japanese mocha 500gr",
+      "price": "6.50 euros",
+      "pic": "tea.jpg"
+    },
+    {
+      "name": "Detox 10x100gr",
+      "price": "16 euros",
+      "pic": "tea2.jpg"
+    },
+    {
+      "name": "Bag Cafés Do Brasil",
+      "price": "4 euros",
+      "pic": "tote.jpg"
+    }
+  ]
 }

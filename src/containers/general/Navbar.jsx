@@ -25,7 +25,7 @@ function NavbarComponent(props) {
   return (
     <div>
       <Navbar
-        className="d-flex justify-content-around mt-5"
+        className="d-flex justify-content-around my-5"
         color="light"
         light
         expand="md"

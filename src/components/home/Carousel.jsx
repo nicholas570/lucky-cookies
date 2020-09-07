@@ -7,7 +7,7 @@ function CarouselComponent(props) {
   const { pics } = props;
 
   return (
-    <Carousel className="m-5">
+    <Carousel className="m-3 m-md-5">
       {pics.map((pic) => {
         return (
           <Carousel.Item key={pic.id}>

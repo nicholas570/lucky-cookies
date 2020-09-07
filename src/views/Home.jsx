@@ -6,9 +6,10 @@ import Carousel from '../components/home/Carousel';
 import MainInfo from '../containers/home/MainInfo';
 import Pics from '../containers/home/Pics';
 import Content from '../containers/home/Content';
+import NewsLetter from '../containers/home/NewsLetter';
 
 function Home(props) {
-  const { main, content, pics, offers, address, contacts } = props;
+  const { main, content, pics, offers, address, contacts, newsLetter } = props;
 
   return (
     <>
@@ -17,6 +18,7 @@ function Home(props) {
       <MainInfo address={address} offers={offers} contacts={contacts} />
       <Pics />
       <Content content={content} />
+      <NewsLetter newsLetter={newsLetter} />
     </>
   );
 }
@@ -28,6 +30,7 @@ Home.propTypes = {
   address: PropTypes.shape.isRequired,
   contacts: PropTypes.shape.isRequired,
   content: PropTypes.shape.isRequired,
+  newsLetter: PropTypes.shape.isRequired,
 };
 
 export default Home;

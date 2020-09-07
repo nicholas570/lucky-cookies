@@ -16,6 +16,7 @@ function App() {
   const [address, setAddress] = useState([]);
   const [contacts, setContacts] = useState([]);
   const [openings, setOpenings] = useState([]);
+  const [newsLetter, setNewsLetter] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -30,6 +31,7 @@ function App() {
         setAddress(res.data.address);
         setContacts(res.data.contacts);
         setOpenings(res.data.openings);
+        setNewsLetter(res.data.newsLetter);
       })
       .catch((err) => alert(err.message));
   };
@@ -50,6 +52,7 @@ function App() {
         address={address}
         contacts={contacts}
         openings={openings}
+        newsLetter={newsLetter}
       />
     </div>
   );

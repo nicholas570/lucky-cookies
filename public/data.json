@@ -54,6 +54,9 @@
     { "id": 11, "image": "tart.jpg" },
     { "id": 12, "image": "shelf.jpg" }
   ],
+  "newsLetter": {
+    "image": "newsLetter.jpg"
+  },
   "shop": {
     "description": "We are cookie, coffee and tea expert. Here tou can order and pay online. Orders have to be made before 8pm for the next day, can be taken at the shop or delivered subject to availability. Delivered only in city center (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Chantiers Navals, Gare)",
     "partners text": "Our cookies are also available at our friends shops. ",

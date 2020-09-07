@@ -10,7 +10,7 @@ function Content(props) {
   const { content } = props;
 
   return (
-    <Container className="d-flex flex-column flex-md-row mt-5">
+    <Container className="d-flex flex-column flex-md-row mt-5 pb-5">
       <Slogan content={content} />
       <TextContent content={content} />
     </Container>

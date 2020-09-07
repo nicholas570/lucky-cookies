@@ -41,22 +41,22 @@ function NavbarComponent(props) {
         <Collapse className={style.container} isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink className="text-dark" href="/components/">
+              <NavLink className="text-dark" href="/shop">
                 Shop
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark" href="/">
+              <NavLink className="text-dark" href="/about">
                 About
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark" href="/">
+              <NavLink className="text-dark" href="https://www.facebook.com/">
                 <FontAwesomeIcon icon={faFacebook} />
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark" href="/">
+              <NavLink className="text-dark" href="https://www.instagram.com/">
                 <FontAwesomeIcon icon={faInstagram} />
               </NavLink>
             </NavItem>

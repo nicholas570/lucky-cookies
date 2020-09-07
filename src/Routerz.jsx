@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './views/Home';
+import Shop from './views/Shop';
+import About from './views/About';
 
 function Routerz(props) {
   const {
@@ -33,6 +35,8 @@ function Routerz(props) {
             newsLetter={newsLetter}
           />
         </Route>
+        <Route path="/shop" component={Shop} />
+        <Route path="/about" component={About} />
       </Switch>
     </Router>
   );

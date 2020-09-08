@@ -7,10 +7,22 @@ import MainInfo from '../containers/home/MainInfo';
 import Pics from '../containers/home/Pics';
 import Content from '../containers/home/Content';
 import NewsLetter from '../containers/home/NewsLetter';
+import Location from '../containers/home/Location';
 import Iframe from '../containers/home/Iframe';
+import FindUs from '../containers/home/FindUs';
 
 function Home(props) {
-  const { main, content, pics, offers, address, contacts, newsLetter } = props;
+  const {
+    main,
+    content,
+    pics,
+    offers,
+    address,
+    contacts,
+    newsLetter,
+    partners,
+    openings,
+  } = props;
 
   return (
     <>
@@ -20,7 +32,14 @@ function Home(props) {
       <Pics />
       <Content content={content} />
       <NewsLetter newsLetter={newsLetter} />
+      <Location
+        content={content}
+        address={address}
+        contacts={contacts}
+        openings={openings}
+      />
       <Iframe />
+      <FindUs content={content} partners={partners} />
     </>
   );
 }
@@ -33,6 +52,8 @@ Home.propTypes = {
   contacts: PropTypes.shape.isRequired,
   content: PropTypes.shape.isRequired,
   newsLetter: PropTypes.shape.isRequired,
+  partners: PropTypes.shape.isRequired,
+  openings: PropTypes.shape.isRequired,
 };
 
 export default Home;

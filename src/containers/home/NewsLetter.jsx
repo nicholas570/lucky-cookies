@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Container from 'react-bootstrap/Container';
 
-import NewsLetterForm from '../../components/home/NewsLetterForm';
+import NewsLetterForm from '../../components/home/NewsLettter_Form';
 
 function NewsLetter(props) {
   const { newsLetter } = props;

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import Container from 'react-bootstrap/Container';
 
-import Slogan from '../../components/home/Slogan';
-import TextContent from '../../components/home/TextContent';
+import Slogan from '../../components/home/Content_Slogan';
+import TextContent from '../../components/home/Content_Text';
 
 function Content(props) {
   const { content } = props;

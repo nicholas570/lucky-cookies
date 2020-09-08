@@ -8,10 +8,7 @@ function Address(props) {
     <div className="mt-5">
       <p className="font-weight-bold">Address</p>
       <p>{address.street}</p>
-      <p>
-        {address.zip}
-        {address.city}
-      </p>
+      <p>{`${address.zip} ${address.city}`}</p>
     </div>
   );
 }

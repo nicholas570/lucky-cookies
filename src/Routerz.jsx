@@ -17,6 +17,8 @@ function Routerz(props) {
     address,
     contacts,
     newsLetter,
+    partners,
+    openings,
   } = props;
 
   return (
@@ -33,6 +35,8 @@ function Routerz(props) {
             address={address}
             contacts={contacts}
             newsLetter={newsLetter}
+            partners={partners}
+            openings={openings}
           />
         </Route>
         <Route path="/shop" component={Shop} />
@@ -52,6 +56,8 @@ Routerz.propTypes = {
   address: PropTypes.shape.isRequired,
   contacts: PropTypes.shape.isRequired,
   newsLetter: PropTypes.shape.isRequired,
+  partners: PropTypes.shape.isRequired,
+  openings: PropTypes.shape.isRequired,
 };
 
 export default Routerz;

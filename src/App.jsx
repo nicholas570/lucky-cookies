@@ -4,7 +4,7 @@ import axios from 'axios';
 import Router from './Routerz';
 
 import './scss/app.scss';
-import './App.css';
+import './css/general/App.css';
 
 function App() {
   const [main, setMain] = useState([]);
@@ -17,6 +17,7 @@ function App() {
   const [contacts, setContacts] = useState([]);
   const [openings, setOpenings] = useState([]);
   const [newsLetter, setNewsLetter] = useState([]);
+  const [partners, setPartners] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -32,6 +33,7 @@ function App() {
         setContacts(res.data.contacts);
         setOpenings(res.data.openings);
         setNewsLetter(res.data.newsLetter);
+        setPartners(res.data.partners);
       })
       .catch((err) => alert(err.message));
   };
@@ -53,6 +55,7 @@ function App() {
         contacts={contacts}
         openings={openings}
         newsLetter={newsLetter}
+        partners={partners}
       />
     </div>
   );

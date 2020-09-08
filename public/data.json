@@ -15,8 +15,8 @@
   "address": {
     "place": "Ile de Nantes",
     "street": "2 rue Louis Blanc",
-    "city": "Nantes",
-    "zip": "44000"
+    "zip": "44000",
+    "city": "Nantes"
   },
   "offers": [
     { "id": 1, "name": "Cookies" },
@@ -30,16 +30,36 @@
     "slogan2": "Daily baked cookies & lunch",
     "location": "We are located right at the heart of the Nantes creative district on Ile de Nantes. Surrounded by urban farms, fine art and design schools, artists studios, start-ups incubators and “Les Machines de l’Ile” wonderful attractions. ",
     "what": "We’re home for creativity at the intersection between gastronomy and ecology. Cookie Bakery, café, eatery and creative space, Lucky Cookies offers a new take on simple food. ",
-    "where to find us": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates. ",
-    "partners": [
-      "Ô Bocal ",
-      "Epicerie Equitable",
-      "Epicerie Mangi",
-      "Le Café du Cinéma",
-      "Biocoop République",
-      "L'Absence"
-    ]
+    "where": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates. "
   },
+  "partners": [
+    { "id": 1, "name": "Ô Bocal", "mail": "http://obocal.com/" },
+    {
+      "id": 2,
+      "name": "Epicerie Equitable",
+      "mail": "https://www.facebook.com/pages/category/Organic-Grocery-Store/LEpicerie-Equitable-Nantes-102101464509604/"
+    },
+    {
+      "id": 3,
+      "name": "Epicerie Mangi",
+      "mail": "https://www.facebook.com/epiceriemangi/"
+    },
+    {
+      "id": 4,
+      "name": "Le Café du Cinéma",
+      "mail": "https://www.facebook.com/pages/category/Bar/Caf%C3%A9-du-Cin%C3%A9ma-400959776581579/"
+    },
+    {
+      "id": 5,
+      "name": "Biocoop République",
+      "mail": "https://www.biocoop.fr/magasins-bio/Trouver-mon-magasin-Biocoop/Pays-de-la-Loire/Loire-Atlantique/BIOCOOP-NANTES-REPUBLIQUE"
+    },
+    {
+      "id": 6,
+      "name": "L'Absence",
+      "mail": "https://www.facebook.com/LAbsenceNantes/"
+    }
+  ],
   "pics_carousel": [
     { "id": 1, "image": "baker.jpg" },
     { "id": 2, "image": "ambiance.jpg" },

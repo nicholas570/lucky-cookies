@@ -7,6 +7,7 @@ import MainInfo from '../containers/home/MainInfo';
 import Pics from '../containers/home/Pics';
 import Content from '../containers/home/Content';
 import NewsLetter from '../containers/home/NewsLetter';
+import Iframe from '../containers/home/Iframe';
 
 function Home(props) {
   const { main, content, pics, offers, address, contacts, newsLetter } = props;
@@ -19,6 +20,7 @@ function Home(props) {
       <Pics />
       <Content content={content} />
       <NewsLetter newsLetter={newsLetter} />
+      <Iframe />
     </>
   );
 }

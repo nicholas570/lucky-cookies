@@ -5,7 +5,7 @@ function Partners(props) {
   const { partners } = props;
 
   return (
-    <div>
+    <div className="mb-5">
       {partners.map((partner) => {
         return (
           <a href={partner.mail} key={partner.id}>

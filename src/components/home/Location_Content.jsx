@@ -7,9 +7,7 @@ function Content(props) {
     <div>
       <p className="text-left">{content.location}</p>
       <br />
-      <br />
       <hr />
-      <br />
       <br />
       <p className="text-left font-italic">{content.locationFrench}</p>
       <br />

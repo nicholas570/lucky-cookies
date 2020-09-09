@@ -14,34 +14,40 @@ function Footer(props) {
 
   return (
     <Container fluid className="p-5" id={style.BgColor}>
-      <Row className="ml-5">
-        <Col>
-          <p className="text-left">Photo credits (c) Pixabay</p>
-        </Col>
-      </Row>
       <Row className="justify-content-center mb-3">
         <Col xs="6" md="4" lg="2" className="p-3">
           <Image src={`/assets/images/logo/${main.logo}`} rounded alt="logo" />
         </Col>
       </Row>
-      <Row className="justify-content-center mb-3">
-        <Col>
-          <p className="font-weight-bold text-muted">
-            &#169; 2020
-            {'   '}
-            {main.brand}
-            {'   '}
-            (SAS)
-          </p>
-        </Col>
-      </Row>
       <Row className="justify-content-center mb-4">
         <Col>
+          <p className="text-muted font-weight-bold">{main.brand}</p>
           <p className="text-muted">{address.street}</p>
           <p className="text-muted">{`${address.zip} ${address.city}`}</p>
         </Col>
       </Row>
-      <Row className="justify-content-center mb-5">
+      <Row className="justify-content-center mb-4">
+        <Col>
+          <p className="font-weight-bold text-muted">
+            &#169; 2020
+            {'   '}
+            Nicolas Mercier
+          </p>
+          <p>
+            Photo credits
+            {'  '}
+            <strong>(c) Pixabay</strong>
+          </p>
+          <p>
+            Logo by
+            <strong> RROOK</strong>
+            {'   '}
+            from
+            <strong> the Noon Project</strong>
+          </p>
+        </Col>
+      </Row>
+      <Row className="justify-content-center mb-4">
         <Col>
           <Button variant="light" className="btn btn-outline-dark">
             CONTACT

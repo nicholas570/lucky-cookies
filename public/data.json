@@ -31,10 +31,11 @@
     "slogan": "Homemade food, brewed teas & coffees",
     "slogan2": "Daily baked cookies & lunch",
     "location": "We are located right at the heart of the Nantes creative district on Ile de Nantes. Surrounded by urban farms, fine art and design schools, artists studios, start-ups incubators and “Les Machines de l’Ile” wonderful attractions. ",
+    "locationFrench": "Nous sommes situé au coeur du quartier de la création sur l’Ile de Nantes. Entouré par les fermes urbaines, écoles d’arts et de design, studios d’artistes, incubateurs et les merveilleuses “Machines de l’Ile”. ",
     "what": "We’re home for creativity at the intersection between gastronomy and ecology. Cookie Bakery, café, eatery and creative space, Lucky Cookies offers a new take on simple food. ",
     "whatFrench": "Nous sommes un foyer de créativité à l’intersection entre la gastronomie et l’écologie. Patisserie, café et espace créatif, Lucky Cookies offre une nouvelle approche pour manger simple et mieux.",
     "where": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates.",
-    "locationFrench": "Nous sommes situé au coeur du quartier de la création sur l’Ile de Nantes. Entouré par les fermes urbaines, écoles d’arts et de design, studios d’artistes, incubateurs et les merveilleuses “Machines de l’Ile”. "
+    "whereFrench": "Lucky Cookies est engagé pour soutenir les artisans locaux qui font vivre les meilleures offres culinaires de notre ville. Vous pouvez trouver nos cookies et gourmandises dans de nombreux commerces et institutions gastronomiques Nantaises. Suivez-vous sur les réseaux et inscrivez-vous à notre newsletter pour recevoir des nouvelles."
   },
   "partners": [
     { "id": 1, "name": "Ô Bocal", "mail": "http://obocal.com/" },

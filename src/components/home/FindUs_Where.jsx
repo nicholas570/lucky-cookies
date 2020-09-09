@@ -5,8 +5,12 @@ function Where(props) {
   const { content } = props;
   return (
     <div className="text-left mb-5">
-      <p className="font-weight-bold mb-3">Where to find us?</p>
       <p>{content.where}</p>
+      <br />
+      <hr />
+      <br />
+      <p className="text-left font-italic">{content.whereFrench}</p>
+      <br />
       <a href="https://www.facebook.com/" className="text-dark font-italic">
         Facebook
       </a>

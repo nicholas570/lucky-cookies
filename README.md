@@ -22,6 +22,8 @@ I thought this website as a template. All the data and images (keep the same fil
 - Finish home page
 - Build shop & about pages
 - Style links
+- Check margin/padding
+- Fix PropTypes
 - Handle state globally
 
 ### Preview here:

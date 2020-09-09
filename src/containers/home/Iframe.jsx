@@ -11,7 +11,7 @@ function Iframe() {
         height="450"
         frameBorder="0"
         style={{ border: 0 }}
-        allowFullscreen="true"
+        allowFullScreen
         aria-hidden="false"
         title="location"
       />

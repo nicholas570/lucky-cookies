@@ -8,7 +8,7 @@ function Partners(props) {
     <div>
       {partners.map((partner) => {
         return (
-          <a href={partner.mail}>
+          <a href={partner.mail} key={partner.id}>
             <p className="text-left text-dark font-italic">{partner.name}</p>
           </a>
         );

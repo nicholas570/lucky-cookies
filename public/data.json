@@ -2,7 +2,8 @@
   "main": {
     "brand": "Lucky Cookies",
     "motto": "Homemade food, brewed teas & coffees",
-    "description": "Cookie bakery & coffee shop"
+    "description": "Cookie bakery & coffee shop",
+    "logo": "logos.svg"
   },
   "contacts": {
     "mail": "contact@luckycookies.com",

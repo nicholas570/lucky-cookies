@@ -10,6 +10,7 @@ import NewsLetter from '../containers/home/NewsLetter';
 import Location from '../containers/home/Location';
 import Iframe from '../containers/home/Iframe';
 import FindUs from '../containers/home/FindUs';
+import Footer from '../containers/general/Footer';
 
 function Home(props) {
   const {
@@ -40,6 +41,7 @@ function Home(props) {
       />
       <Iframe />
       <FindUs content={content} partners={partners} />
+      <Footer main={main} address={address} />
     </>
   );
 }

@@ -20,10 +20,10 @@ I thought this website as a template. All the data and images (keep the same fil
 
 ### Todo:
 
-- Finish home page
+- Check margin/padding
+- Create a layout and layouted routes
 - Build shop & about pages
 - Style links
-- Check margin/padding
 - Fix PropTypes
 - TESTS!!!
 - Handle state globally

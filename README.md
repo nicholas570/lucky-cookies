@@ -11,6 +11,7 @@ I thought this website as a template. All the data and images (keep the same fil
 ### What I used:
 
 - React.js
+- Hooks API
 - Bootstrap 4
 - Sass / Node-Sass
 - Eslint / Prettier and Husky
@@ -24,6 +25,7 @@ I thought this website as a template. All the data and images (keep the same fil
 - Style links
 - Check margin/padding
 - Fix PropTypes
+- TESTS!!!
 - Handle state globally
 
 ### Preview here:

@@ -10,7 +10,7 @@ function NewsLetter(props) {
   return (
     <Container
       fluid
-      className="vh-100 mt-5"
+      className="vh-100 my-5"
       style={{
         background: `url(/assets/images/newsLetter/${newsLetter.image}) no-repeat fixed`,
       }}

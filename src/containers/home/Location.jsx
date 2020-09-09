@@ -10,7 +10,7 @@ function Location(props) {
   const { content, address, contacts, openings } = props;
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 p-5">
       <Row>
         <Col sm="12" md="3">
           <Info address={address} contacts={contacts} openings={openings} />

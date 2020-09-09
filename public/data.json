@@ -11,7 +11,8 @@
   },
   "openings": {
     "days": "7/7",
-    "hours": "8:00 - 18-00"
+    "hours": "8:00 - 18-00",
+    "vacations": "15-30 August"
   },
   "address": {
     "place": "Ile de Nantes",
@@ -33,7 +34,7 @@
     "what": "We’re home for creativity at the intersection between gastronomy and ecology. Cookie Bakery, café, eatery and creative space, Lucky Cookies offers a new take on simple food. ",
     "whatFrench": "Nous sommes un foyer de créativité à l’intersection entre la gastronomie et l’écologie. Patisserie, café et espace créatif, Lucky Cookies offre une nouvelle approche pour manger simple et mieux.",
     "where": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates.",
-    "whereFrench": "Nous sommes situé au coeur du quartier de la création sur l’Ile de Nantes. Entouré par les fermes urbaines, écoles d’arts et de design, studios d’artistes, incubateurs et les merveilleuses “Machines de l’Ile”. "
+    "locationFrench": "Nous sommes situé au coeur du quartier de la création sur l’Ile de Nantes. Entouré par les fermes urbaines, écoles d’arts et de design, studios d’artistes, incubateurs et les merveilleuses “Machines de l’Ile”. "
   },
   "partners": [
     { "id": 1, "name": "Ô Bocal", "mail": "http://obocal.com/" },

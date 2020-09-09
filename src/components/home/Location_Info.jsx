@@ -16,6 +16,10 @@ function Info(props) {
       <br />
       <p>{contacts.phone}</p>
       <p>{contacts.mail}</p>
+      <br />
+      <br />
+      <p className="font-weight-bold">Summer closure</p>
+      <p className="font-weight-bold">{openings.vacations}</p>
     </div>
   );
 }

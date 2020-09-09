@@ -7,12 +7,14 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+import style from '../../css/home/Footer.module.css';
+
 function Footer(props) {
   const { main, address } = props;
 
   return (
-    <Container>
-      <Row>
+    <Container fluid className="p-5" id={style.BgColor}>
+      <Row className="ml-5">
         <Col>
           <p className="text-left">Photo credits (c) Pixabay</p>
         </Col>

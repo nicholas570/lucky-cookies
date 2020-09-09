@@ -14,7 +14,7 @@ import {
   NavbarText,
 } from 'reactstrap';
 
-import style from '../../css/home/navbar.module.css';
+import style from '../../css/home/Navbar.module.css';
 
 function NavbarComponent(props) {
   const { main } = props;
@@ -25,12 +25,7 @@ function NavbarComponent(props) {
 
   return (
     <div>
-      <Navbar
-        className="d-flex justify-content-around my-5"
-        color="light"
-        light
-        expand="md"
-      >
+      <Navbar className="d-flex justify-content-around my-5" light expand="md">
         <NavbarToggler onClick={toggle} />
         <NavbarText className="text-dark d-none d-md-block">
           {main.motto}

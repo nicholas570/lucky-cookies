@@ -5,8 +5,8 @@ function Address(props) {
   const { address } = props;
 
   return (
-    <div className="mt-5">
-      <p className="font-weight-bold">Address</p>
+    <div className="mt-3 mt-md-0">
+      <p className="font-weight-bold mb-3">Address</p>
       <p>{address.street}</p>
       <p>{`${address.zip} ${address.city}`}</p>
     </div>

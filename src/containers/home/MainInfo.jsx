@@ -12,15 +12,13 @@ function MainInfo(props) {
   const { offers, address, contacts } = props;
 
   return (
-    <div>
-      <Jumbotron fluid>
-        <Container className="d-flex flex-column flex-md-row justify-content-around">
-          <Address address={address} />
-          <Offers offers={offers} />
-          <Contacts contacts={contacts} />
-        </Container>
-      </Jumbotron>
-    </div>
+    <Jumbotron fluid>
+      <Container className="d-flex flex-column flex-md-row justify-content-around">
+        <Address address={address} />
+        <Offers offers={offers} />
+        <Contacts contacts={contacts} />
+      </Container>
+    </Jumbotron>
   );
 }
 

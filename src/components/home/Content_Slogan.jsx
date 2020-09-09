@@ -6,9 +6,10 @@ function Slogan(props) {
 
   return (
     <div>
-      <h4>{content.slogan}</h4>
+      <h4 className="font-weight-bold">{content.slogan}</h4>
       <br />
-      <h4>{content.slogan2}</h4>
+      <br />
+      <h4 className="font-weight-bold">{content.slogan2}</h4>
     </div>
   );
 }

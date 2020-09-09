@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 $font-family-sans-serif: Montserrat, sans-serif;
+$font-size-base: 0.875rem;
+
 $light: #ffffff;
 $dark: black;
 $jumbotron-bg: #f7f3e8;
 $danger: transparent;
+
 $paragraph-margin-bottom: 0;
 $btn-border-radius: 0;
+
+$link-decoration: underline;
 
 @import '~bootstrap/scss/bootstrap';

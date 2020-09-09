@@ -5,8 +5,8 @@ function Contacts(props) {
   const { contacts } = props;
 
   return (
-    <div className="mt-5">
-      <p className="font-weight-bold">Contacts</p>
+    <div className="mt-3 mt-md-0">
+      <p className="font-weight-bold mb-3">Contacts</p>
       <p>{contacts.phone}</p>
       <p>{contacts.mail}</p>
     </div>

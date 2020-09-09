@@ -12,7 +12,7 @@ function NewsLetter(props) {
       fluid
       className="vh-100 mt-5"
       style={{
-        background: `url(/assets/images/newsLetter/${newsLetter.image}) no-repeat`,
+        background: `url(/assets/images/newsLetter/${newsLetter.image}) no-repeat fixed`,
       }}
     >
       <NewsLetterForm />

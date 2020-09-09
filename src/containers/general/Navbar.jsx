@@ -25,15 +25,19 @@ function NavbarComponent(props) {
 
   return (
     <div>
-      <Navbar className="d-flex justify-content-around my-5" light expand="md">
-        <NavbarToggler onClick={toggle} />
+      <Navbar
+        className="d-flex flex-row justify-content-around my-5"
+        light
+        expand="md"
+      >
         <NavbarText className="text-dark d-none d-md-block">
           {main.motto}
         </NavbarText>
         <NavbarBrand href="/">
-          <h4 className="font-weight-bold text-dark">{main.brand}</h4>
-          <NavbarText className="text-dark">{main.description}</NavbarText>
+          <h5 className="font-weight-bold text-dark">{main.brand}</h5>
+          <h6 className="text-dark">{main.description}</h6>
         </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
         <Collapse className={style.container} isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>

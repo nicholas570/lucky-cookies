@@ -6,8 +6,8 @@ function NewsLetterForm() {
   return (
     <div className="pt-5 p-md-5">
       <div className="mt-5">
-        <h4>Brewed and Baked daily</h4>
-        <p>Subscribe to the newsletter</p>
+        <h4 className="text-muted">Brewed and Baked daily</h4>
+        <p className="text-muted">Subscribe to the newsletter</p>
       </div>
       <Form>
         <Row className="d-flex flex-column flex-md-row p-5">

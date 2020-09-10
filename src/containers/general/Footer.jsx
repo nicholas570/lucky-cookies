@@ -21,14 +21,14 @@ function Footer(props) {
       </Row>
       <Row className="justify-content-center mb-4">
         <Col>
-          <p className="text-muted font-weight-bold">{main.brand}</p>
+          <p className="text-muted font-weight-bold">{`${main.brand} (SAS)`}</p>
           <p className="text-muted">{address.street}</p>
           <p className="text-muted">{`${address.zip} ${address.city}`}</p>
         </Col>
       </Row>
       <Row className="justify-content-center mb-4">
         <Col>
-          <p className="font-weight-bold text-muted">
+          <p className="font-weight-bold">
             &#169; 2020
             {'   '}
             Nicolas Mercier
@@ -38,18 +38,14 @@ function Footer(props) {
             {'  '}
             <strong>(c) Pixabay</strong>
           </p>
-          <p>
-            Logo by
-            <strong> RROOK</strong>
-            {'   '}
-            from
-            <strong> the Noon Project</strong>
-          </p>
         </Col>
       </Row>
       <Row className="justify-content-center mb-4">
         <Col>
-          <Button variant="light" className="btn btn-outline-dark">
+          <Button
+            variant="light"
+            className="font-weight-bold btn btn-outline-dark"
+          >
             CONTACT
           </Button>
         </Col>
@@ -58,18 +54,21 @@ function Footer(props) {
         <Col md="4" lg="3">
           <Nav navbar className="d-flex flex-row justify-content-around">
             <NavItem>
-              <NavLink className="text-dark font-weight-bold" href="/shop">
+              <NavLink className="font-weight-bold nav-font-color" href="/shop">
                 Shop
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark font-weight-bold" href="/about">
+              <NavLink
+                className="font-weight-bold nav-font-color"
+                href="/about"
+              >
                 About
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                className="text-dark font-weight-bold"
+                className="nav-font-color"
                 href="https://www.facebook.com/"
               >
                 <FontAwesomeIcon icon={faFacebook} />
@@ -77,7 +76,7 @@ function Footer(props) {
             </NavItem>
             <NavItem>
               <NavLink
-                className="text-dark font-weight-bold"
+                className="nav-font-color"
                 href="https://www.instagram.com/"
               >
                 <FontAwesomeIcon icon={faInstagram} />

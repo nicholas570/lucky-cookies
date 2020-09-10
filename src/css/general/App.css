@@ -5,3 +5,19 @@ body {
 .App {
   text-align: center;
 }
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #bdbdbd;
+}
+
+.nav-font-color {
+  color: #000000;
+}
+
+.nav-font-color:hover {
+  transition: color 0.3s;
+}

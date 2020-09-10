@@ -30,7 +30,7 @@ function NavbarComponent(props) {
         light
         expand="md"
       >
-        <NavbarText className="text-dark d-none d-md-block">
+        <NavbarText className="text-dark font-weight-bold d-none d-md-block">
           {main.motto}
         </NavbarText>
         <NavbarBrand className={style.decoration} href="/">
@@ -41,22 +41,22 @@ function NavbarComponent(props) {
         <Collapse className={style.container} isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink className="text-dark" href="/shop">
+              <NavLink className="font-weight-bold" href="/shop">
                 Shop
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark" href="/about">
+              <NavLink className="font-weight-bold" href="/about">
                 About
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark" href="https://www.facebook.com/">
+              <NavLink className="go" href="https://www.facebook.com/">
                 <FontAwesomeIcon icon={faFacebook} />
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-dark" href="https://www.instagram.com/">
+              <NavLink className="go" href="https://www.instagram.com/">
                 <FontAwesomeIcon icon={faInstagram} />
               </NavLink>
             </NavItem>

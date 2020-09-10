@@ -11,14 +11,11 @@ function Where(props) {
       <br />
       <p className="text-left font-italic">{content.whereFrench}</p>
       <br />
-      <a href="https://www.facebook.com/" className="text-dark font-italic">
+      <a href="https://www.facebook.com/" className=" font-italic">
         Facebook
       </a>
       {'  '}
-      <a
-        href="https://www.instagram.com/"
-        className="text-dark font-italic ml-3"
-      >
+      <a href="https://www.instagram.com/" className="font-italic ml-3">
         Instagram
       </a>
     </div>

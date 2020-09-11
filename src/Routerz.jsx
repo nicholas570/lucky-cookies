@@ -39,8 +39,12 @@ function Routerz(props) {
             openings={openings}
           />
         </Route>
-        <Route path="/shop" component={Shop} />
-        <Route path="/about" component={About} />
+        <Route path="/shop">
+          <Shop main={main} address={address} />
+        </Route>
+        <Route path="/about">
+          <About main={main} address={address} />
+        </Route>
       </Switch>
     </Router>
   );

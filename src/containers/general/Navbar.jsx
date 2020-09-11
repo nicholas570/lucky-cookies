@@ -41,13 +41,13 @@ function NavbarComponent(props) {
         <Collapse className={style.container} isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink className="font-weight-bold" href="/shop">
-                Shop
+              <NavLink className="font-weight-bold" href="/menu">
+                Menu
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="font-weight-bold" href="/about">
-                About
+              <NavLink className="font-weight-bold" href="/shop">
+                Shop
               </NavLink>
             </NavItem>
             <NavItem>

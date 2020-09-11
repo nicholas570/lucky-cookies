@@ -99,6 +99,33 @@
       "L'Absence"
     ]
   },
+  "menu": {
+    "from": "7",
+    "to": "14",
+    "month": "Janvier",
+    "snacks": [
+      { "id": 1, "name": "Tarte du jour", "price": 4.5 },
+      {
+        "id": 2,
+        "name": "Sandwich végétarien (aubergine, tomate confite, courgette, pesto)",
+        "price": 4
+      },
+      {
+        "id": 3,
+        "name": "Sandwich italien (coppa, tomate confite, mozza di buffala, pesto)",
+        "price": 5
+      }
+    ],
+    "mainCourses": [
+      { "id": 1, "name": "Salade grecque et pain pita maison", "price": 8.5 },
+      {
+        "id": 3,
+        "name": "Patate douce aux épices, labneh et mesclun",
+        "price": 8.5
+      },
+      { "id": 2, "name": "Poulet au citron confit et semoule", "price": 10 }
+    ]
+  },
   "goods": [
     {
       "name": "Chocolat chip",

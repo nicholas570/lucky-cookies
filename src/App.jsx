@@ -18,6 +18,9 @@ function App() {
   const [openings, setOpenings] = useState([]);
   const [newsLetter, setNewsLetter] = useState([]);
   const [partners, setPartners] = useState([]);
+  const [menu, setMenu] = useState([]);
+  const [snacks, setSnacks] = useState([]);
+  const [mainCourses, setMainCourses] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -34,6 +37,9 @@ function App() {
         setOpenings(res.data.openings);
         setNewsLetter(res.data.newsLetter);
         setPartners(res.data.partners);
+        setMenu(res.data.menu);
+        setSnacks(res.data.menu.snacks);
+        setMainCourses(res.data.menu.mainCourses);
       })
       .catch((err) => alert(err.message));
   };
@@ -56,6 +62,9 @@ function App() {
         openings={openings}
         newsLetter={newsLetter}
         partners={partners}
+        menu={menu}
+        snacks={snacks}
+        mainCourses={mainCourses}
       />
     </div>
   );

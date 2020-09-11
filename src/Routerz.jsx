@@ -19,6 +19,9 @@ function Routerz(props) {
     newsLetter,
     partners,
     openings,
+    menu,
+    snacks,
+    mainCourses,
   } = props;
 
   return (
@@ -39,11 +42,17 @@ function Routerz(props) {
             openings={openings}
           />
         </Route>
+        <Route path="/menu">
+          <Menu
+            main={main}
+            address={address}
+            menu={menu}
+            snacks={snacks}
+            mainCourses={mainCourses}
+          />
+        </Route>
         <Route path="/shop">
           <Shop main={main} address={address} />
-        </Route>
-        <Route path="/menu">
-          <Menu main={main} address={address} />
         </Route>
       </Switch>
     </Router>
@@ -62,6 +71,9 @@ Routerz.propTypes = {
   newsLetter: PropTypes.shape.isRequired,
   partners: PropTypes.shape.isRequired,
   openings: PropTypes.shape.isRequired,
+  menu: PropTypes.shape.isRequired,
+  snacks: PropTypes.shape.isRequired,
+  mainCourses: PropTypes.shape.isRequired,
 };
 
 export default Routerz;

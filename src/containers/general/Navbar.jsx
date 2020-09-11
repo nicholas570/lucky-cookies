@@ -51,12 +51,12 @@ function NavbarComponent(props) {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="go" href="https://www.facebook.com/">
+              <NavLink href="https://www.facebook.com/">
                 <FontAwesomeIcon icon={faFacebook} />
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="go" href="https://www.instagram.com/">
+              <NavLink href="https://www.instagram.com/">
                 <FontAwesomeIcon icon={faInstagram} />
               </NavLink>
             </NavItem>

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './views/Home';
 import Shop from './views/Shop';
-import About from './views/About';
+import Menu from './views/Menu';
 
 function Routerz(props) {
   const {
@@ -42,8 +42,8 @@ function Routerz(props) {
         <Route path="/shop">
           <Shop main={main} address={address} />
         </Route>
-        <Route path="/about">
-          <About main={main} address={address} />
+        <Route path="/menu">
+          <Menu main={main} address={address} />
         </Route>
       </Switch>
     </Router>

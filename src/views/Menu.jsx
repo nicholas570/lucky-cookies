@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Navbar from '../containers/general/Navbar';
 import Footer from '../containers/general/Footer';
 
-function About(props) {
+function Menu(props) {
   const { main, address } = props;
   return (
     <div>
@@ -15,9 +15,9 @@ function About(props) {
   );
 }
 
-About.propTypes = {
+Menu.propTypes = {
   main: PropTypes.shape.isRequired,
   address: PropTypes.shape.isRequired,
 };
 
-export default About;
+export default Menu;

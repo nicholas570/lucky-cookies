@@ -61,9 +61,9 @@ function Footer(props) {
             <NavItem>
               <NavLink
                 className="font-weight-bold nav-font-color"
-                href="/about"
+                href="/careers"
               >
-                About
+                Careers
               </NavLink>
             </NavItem>
             <NavItem>

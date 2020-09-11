@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Contents(props) {
-  const { menu, snacks, mainCourses } = props;
+  const { menu, snacks, mainCourses, desserts } = props;
   return (
     <Container className="text-left border border-primary ">
       <Row className="mb-5">
@@ -53,7 +53,15 @@ function Contents(props) {
       <Row className="mt-4">
         <Col className="col-md-6 offset-md-1">
           <p className="font-weight-bold">Desserts</p>
-          <p>map sur les desserts</p>
+          {desserts.map((dessert) => {
+            return (
+              <p key={dessert.id}>
+                {dessert.name}
+                {'  '}
+                <strong>{dessert.price}</strong>
+              </p>
+            );
+          })}
         </Col>
       </Row>
       <Row className="mt-4">
@@ -70,6 +78,7 @@ Contents.propTypes = {
   menu: PropTypes.shape.isRequired,
   snacks: PropTypes.shape.isRequired,
   mainCourses: PropTypes.shape.isRequired,
+  desserts: PropTypes.shape.isRequired,
 };
 
 export default Contents;

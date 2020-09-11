@@ -6,11 +6,16 @@ import Footer from '../containers/general/Footer';
 import Lunch from '../containers/menu/Lunch';
 
 function Menu(props) {
-  const { main, address, menu, snacks, mainCourses } = props;
+  const { main, address, menu, snacks, mainCourses, desserts } = props;
   return (
     <div>
       <Navbar main={main} />
-      <Lunch menu={menu} snacks={snacks} mainCourses={mainCourses} />
+      <Lunch
+        menu={menu}
+        snacks={snacks}
+        mainCourses={mainCourses}
+        desserts={desserts}
+      />
       <Footer main={main} address={address} />
     </div>
   );
@@ -22,6 +27,7 @@ Menu.propTypes = {
   menu: PropTypes.shape.isRequired,
   snacks: PropTypes.shape.isRequired,
   mainCourses: PropTypes.shape.isRequired,
+  desserts: PropTypes.shape.isRequired,
 };
 
 export default Menu;

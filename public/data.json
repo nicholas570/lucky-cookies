@@ -124,6 +124,13 @@
         "price": 8.5
       },
       { "id": 2, "name": "Poulet au citron confit et semoule", "price": 10 }
+    ],
+    "desserts": [
+      { "id": 1, "name": "Cookie", "price": "1.80-3" },
+      { "id": 2, "name": "Fromage blanc et granola", "price": 3.5 },
+      { "id": 3, "name": "Tarte aux figues", "price": 3.5 },
+      { "id": 4, "name": "Paris-Brest", "price": 4 },
+      { "id": 5, "name": "Carrot cake", "price": 3.5 }
     ]
   },
   "goods": [

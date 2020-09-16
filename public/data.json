@@ -141,6 +141,20 @@
       { "id": 5, "name": "Perrier", "price": 2 }
     ]
   },
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Cuisinier / cuisiniere alternant",
+      "description": "loloololoololoolollollolloololoolo",
+      "starting": "ASAP"
+    },
+    {
+      "id": 2,
+      "title": "Serveur / serveuse",
+      "description": "loloololoololoolollollolloololoolo",
+      "starting": "ASAP"
+    }
+  ],
   "goods": [
     {
       "name": "Chocolat chip",

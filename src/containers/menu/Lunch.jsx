@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Contents from '../../components/menu/Contents';
 
 function Lunch(props) {
-  const { menu, snacks, mainCourses, desserts } = props;
+  const { menu, snacks, mainCourses, desserts, drinks } = props;
 
   return (
     <Container fluid className="p-5">
@@ -17,6 +17,7 @@ function Lunch(props) {
             snacks={snacks}
             mainCourses={mainCourses}
             desserts={desserts}
+            drinks={drinks}
           />
         </Col>
       </Row>
@@ -29,6 +30,7 @@ Lunch.propTypes = {
   snacks: PropTypes.shape.isRequired,
   mainCourses: PropTypes.shape.isRequired,
   desserts: PropTypes.shape.isRequired,
+  drinks: PropTypes.shape.isRequired,
 };
 
 export default Lunch;

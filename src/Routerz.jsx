@@ -23,6 +23,7 @@ function Routerz(props) {
     snacks,
     mainCourses,
     desserts,
+    drinks,
   } = props;
 
   return (
@@ -51,6 +52,7 @@ function Routerz(props) {
             snacks={snacks}
             mainCourses={mainCourses}
             desserts={desserts}
+            drinks={drinks}
           />
         </Route>
         <Route path="/shop">
@@ -77,6 +79,7 @@ Routerz.propTypes = {
   snacks: PropTypes.shape.isRequired,
   mainCourses: PropTypes.shape.isRequired,
   desserts: PropTypes.shape.isRequired,
+  drinks: PropTypes.shape.isRequired,
 };
 
 export default Routerz;

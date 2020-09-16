@@ -100,6 +100,7 @@
     ]
   },
   "menu": {
+    "text": "Notre menu change chaque semaine, n’hésitez pas à nous contacter pour obtenir plus d’informations et effectuer une réservations",
     "from": "7",
     "to": "14",
     "month": "Janvier",
@@ -126,11 +127,18 @@
       { "id": 2, "name": "Poulet au citron confit et semoule", "price": 10 }
     ],
     "desserts": [
-      { "id": 1, "name": "Cookie", "price": "1.80-3" },
+      { "id": 1, "name": "Cookie", "price": "1.80 - 3" },
       { "id": 2, "name": "Fromage blanc et granola", "price": 3.5 },
       { "id": 3, "name": "Tarte aux figues", "price": 3.5 },
       { "id": 4, "name": "Paris-Brest", "price": 4 },
       { "id": 5, "name": "Carrot cake", "price": 3.5 }
+    ],
+    "drinks": [
+      { "id": 1, "name": "Café ou thé", "price": "2 - 3.50" },
+      { "id": 2, "name": "Jus de fruits des Coteaux Nantais", "price": 3 },
+      { "id": 3, "name": "Cidre", "price": 3 },
+      { "id": 4, "name": "Bières artisanales", "price": 4 },
+      { "id": 5, "name": "Perrier", "price": 2 }
     ]
   },
   "goods": [

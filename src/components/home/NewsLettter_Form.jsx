@@ -23,7 +23,7 @@ function NewsLetterForm() {
         </Row>
 
         <Button
-          variant="danger"
+          variant="warning"
           className="btn btn-outline-light"
           size="lg"
           type="submit"

@@ -33,10 +33,10 @@ function Footer(props) {
             {'   '}
             Nicolas Mercier
           </p>
-          <p>
+          <p className="font-weight-bold">
             Photo credits
             {'  '}
-            <strong>(c) Pixabay</strong>
+            (c) Pixabay
           </p>
         </Col>
       </Row>

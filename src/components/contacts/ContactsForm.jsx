@@ -4,6 +4,13 @@ import { Col, Form, Button } from 'react-bootstrap';
 
 function ContactsForm() {
   const [validated, setValidated] = useState(false);
+  const [state, setState] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -15,38 +22,83 @@ function ContactsForm() {
     setValidated(true);
   };
 
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setState({
+      ...state,
+      [name]: value,
+    });
+  };
+
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Form.Row>
-        <Form.Group as={Col} md="6" controlId="validationCustom01">
+        <Form.Group as={Col} md="6" controlId="firstName">
           <Form.Label>First name</Form.Label>
-          <Form.Control required type="text" placeholder="First name" />
+          <Form.Control
+            type="text"
+            name="firstName"
+            placeholder="First name"
+            value={state.firstName}
+            onChange={handleChange}
+            required
+          />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md="6" controlId="validationCustom02">
+        <Form.Group as={Col} md="6" controlId="lastName">
           <Form.Label>Last name</Form.Label>
-          <Form.Control required type="text" placeholder="Last name" />
+          <Form.Control
+            type="text"
+            placeholder="Last name"
+            name="lastName"
+            value={state.lastName}
+            onChange={handleChange}
+            required
+          />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
       </Form.Row>
       <Form.Row>
-        <Form.Group as={Col} md="12" controlId="validationCustom03">
+        <Form.Group as={Col} md="12" controlId="email">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="text" placeholder="Email" required />
+          <Form.Control
+            type="text"
+            placeholder="Email"
+            name="email"
+            value={state.email}
+            onChange={handleChange}
+            required
+          />
           <Form.Control.Feedback type="invalid">
             Please provide a valid email.
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md="12" controlId="validationCustom04">
+        <Form.Group as={Col} md="12" controlId="subject">
           <Form.Label>Subject</Form.Label>
-          <Form.Control type="text" placeholder="Subject" required />
+          <Form.Control
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            value={state.subject}
+            onChange={handleChange}
+            required
+          />
           <Form.Control.Feedback type="invalid">
             Please provide a valid subject.
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md="12" controlId="validationCustom05">
+        <Form.Group as={Col} md="12" controlId="message">
           <Form.Label>message</Form.Label>
-          <Form.Control as="textarea" rows={5} placeholder="Message" required />
+          <Form.Control
+            as="textarea"
+            rows={5}
+            placeholder="Message"
+            name="message"
+            value={state.message}
+            onChange={handleChange}
+            required
+          />
           <Form.Control.Feedback type="invalid">
             Please provide a valid message.
           </Form.Control.Feedback>

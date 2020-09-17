@@ -22,11 +22,9 @@ function Jobs(props) {
         </Col>
       </Row>
       <Row>
-        <Col className="mb-5">
-          {jobs.map((job) => {
-            return <Job key={job.id} job={job} />;
-          })}
-        </Col>
+        {jobs.map((job) => {
+          return <Job key={job.id} job={job} />;
+        })}
       </Row>
     </Container>
   );

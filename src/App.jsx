@@ -23,6 +23,7 @@ function App() {
   const [mainCourses, setMainCourses] = useState([]);
   const [desserts, setDesserts] = useState([]);
   const [drinks, setDrinks] = useState([]);
+  const [jobs, setJobs] = useState([]);
 
   const fetchData = async () => {
     await axios
@@ -44,6 +45,7 @@ function App() {
         setMainCourses(res.data.menu.mainCourses);
         setDesserts(res.data.menu.desserts);
         setDrinks(res.data.menu.drinks);
+        setJobs(res.data.jobs);
       })
       .catch((err) => alert(err.message));
   };
@@ -71,6 +73,7 @@ function App() {
         mainCourses={mainCourses}
         desserts={desserts}
         drinks={drinks}
+        jobs={jobs}
       />
     </div>
   );

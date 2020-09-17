@@ -141,6 +141,17 @@
       { "id": 5, "name": "Perrier", "price": 2 }
     ]
   },
+  "jobs": [
+    {
+      "id": 1,
+      "title": "PATISSIER / PATISSIERE EN ALTERNANCE",
+      "description": "Lucky Cookies est à la recherche de son/sa futur.e patissier.e! Au sein d'une équipe de 3 personnes et avec l'aide de notre cheffe, tu seras responsable de la réalisation des patisseries et cookies. Nous travaillons uniquement des produits locaux, de saison, et tout est fait maison. Ambiance bienveillante et playlist participative.",
+      "experience": "debutant accepté",
+      "hours": "39h / semaine",
+      "starting": "Septembre 2020",
+      "mail": "careers@luckycookies.com"
+    }
+  ],
   "goods": [
     {
       "name": "Chocolat chip",

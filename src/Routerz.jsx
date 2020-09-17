@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './views/Home';
 import Shop from './views/Shop';
 import Menu from './views/Menu';
+import Careers from './views/Careers';
 
 function Routerz(props) {
   const {
@@ -24,6 +25,7 @@ function Routerz(props) {
     mainCourses,
     desserts,
     drinks,
+    jobs,
   } = props;
 
   return (
@@ -58,6 +60,9 @@ function Routerz(props) {
         <Route path="/shop">
           <Shop main={main} address={address} />
         </Route>
+        <Route path="/careers">
+          <Careers main={main} address={address} jobs={jobs} />
+        </Route>
       </Switch>
     </Router>
   );
@@ -80,6 +85,7 @@ Routerz.propTypes = {
   mainCourses: PropTypes.shape.isRequired,
   desserts: PropTypes.shape.isRequired,
   drinks: PropTypes.shape.isRequired,
+  jobs: PropTypes.shape.isRequired,
 };
 
 export default Routerz;

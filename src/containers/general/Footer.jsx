@@ -7,7 +7,7 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-import Modal from '../../components/contacts/Modal';
+import Modal from '../contacts/Modal';
 
 import style from '../../css/home/Footer.module.css';
 

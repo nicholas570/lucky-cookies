@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+import Modal from '../contacts/Modal';
 
 import style from '../../css/home/Footer.module.css';
 
@@ -42,12 +44,7 @@ function Footer(props) {
       </Row>
       <Row className="justify-content-center mb-4">
         <Col>
-          <Button
-            variant="light"
-            className="font-weight-bold btn btn-outline-dark"
-          >
-            CONTACT
-          </Button>
+          <Modal />
         </Col>
       </Row>
       <Row className="justify-content-center">

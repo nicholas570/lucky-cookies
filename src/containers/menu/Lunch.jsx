@@ -5,9 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import Contents from '../../components/menu/Contents';
 
-function Lunch(props) {
-  const { menu, snacks, mainCourses, desserts, drinks } = props;
-
+function Lunch({ menu, snacks, mainCourses, desserts, drinks }) {
   return (
     <Container fluid className="p-5">
       <Row>

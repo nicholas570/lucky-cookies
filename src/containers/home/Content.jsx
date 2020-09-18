@@ -6,9 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Slogan from '../../components/home/Content_Slogan';
 import TextContent from '../../components/home/Content_Text';
 
-function Content(props) {
-  const { content } = props;
-
+function Content({ content }) {
   return (
     <Container className="p-5">
       <Row className="d-flex flex-column flex-md-row">

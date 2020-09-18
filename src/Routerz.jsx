@@ -7,27 +7,25 @@ import Shop from './views/Shop';
 import Menu from './views/Menu';
 import Careers from './views/Careers';
 
-function Routerz(props) {
-  const {
-    main,
-    content,
-    shop,
-    goods,
-    pics,
-    offers,
-    address,
-    contacts,
-    newsLetter,
-    partners,
-    openings,
-    menu,
-    snacks,
-    mainCourses,
-    desserts,
-    drinks,
-    jobs,
-  } = props;
-
+function Routerz({
+  main,
+  content,
+  shop,
+  goods,
+  pics,
+  offers,
+  address,
+  contacts,
+  newsLetter,
+  partners,
+  openings,
+  menu,
+  snacks,
+  mainCourses,
+  desserts,
+  drinks,
+  jobs,
+}) {
   return (
     <Router>
       <Switch>

@@ -11,9 +11,7 @@ import Modal from '../contacts/Modal';
 
 import style from '../../css/home/Footer.module.css';
 
-function Footer(props) {
-  const { main, address } = props;
-
+function Footer({ main, address }) {
   return (
     <Container fluid className="p-5" id={style.BgColor}>
       <Row className="justify-content-center mb-3">

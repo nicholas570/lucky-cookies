@@ -5,8 +5,7 @@ import Navbar from '../containers/general/Navbar';
 import Footer from '../containers/general/Footer';
 import Lunch from '../containers/menu/Lunch';
 
-function Menu(props) {
-  const { main, address, menu, snacks, mainCourses, desserts, drinks } = props;
+function Menu({ main, address, menu, snacks, mainCourses, desserts, drinks }) {
   return (
     <div>
       <Navbar main={main} />

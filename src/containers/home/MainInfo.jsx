@@ -8,9 +8,7 @@ import Offers from '../../components/home/MainInfo_Offers';
 import Address from '../../components/home/MainInfo_Address';
 import Contacts from '../../components/home/MainInfo_Contacts';
 
-function MainInfo(props) {
-  const { offers, address, contacts } = props;
-
+function MainInfo({ offers, address, contacts }) {
   return (
     <Jumbotron fluid>
       <Container className="d-flex flex-column flex-md-row justify-content-around">

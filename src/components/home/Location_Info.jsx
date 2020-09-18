@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Info(props) {
-  const { address, openings, contacts } = props;
+function Info({ address, openings, contacts }) {
   return (
     <div className="text-left mb-5">
       <p className="font-weight-bold">Address</p>

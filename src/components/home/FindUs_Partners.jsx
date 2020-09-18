@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Partners(props) {
-  const { partners } = props;
-
+function Partners({ partners }) {
   return (
     <div className="mb-5">
       {partners.map((partner) => {

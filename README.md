@@ -11,7 +11,11 @@ I thought this website as a template. All the data and images (keep the same fil
 ### What I used:
 
 - React.js
+- React router dom
 - Hooks API
+- PropTypes
+- Express
+- nodemailer
 - Bootstrap 4
 - Sass / Node-Sass
 - Eslint / Prettier and Husky
@@ -20,10 +24,8 @@ I thought this website as a template. All the data and images (keep the same fil
 
 ### Todo:
 
-- Check margin/padding
 - Create a layout and layouted routes
-- Build shop & about pages
-- Style links
+- Build shop & product pages
 - Fix PropTypes
 - TESTS!!!
 - Handle state globally

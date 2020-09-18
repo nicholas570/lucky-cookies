@@ -7,8 +7,7 @@ import Where from '../../components/home/FindUs_Where';
 import Partners from '../../components/home/FindUs_Partners';
 import PartnersMap from '../../components/home/FindUs_PartnersMap';
 
-function FindUs(props) {
-  const { content, partners } = props;
+function FindUs({ content, partners }) {
   return (
     <Container className="mt-5 pb-5">
       <Row className="mb-5">

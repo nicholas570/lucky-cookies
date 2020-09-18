@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 import Navbar from '../containers/general/Navbar';
 import Footer from '../containers/general/Footer';
 
-function Shop(props) {
-  const { main, address } = props;
+function Shop({ main, address }) {
   return (
     <div>
       <Navbar main={main} />

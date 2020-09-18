@@ -16,9 +16,7 @@ import {
 
 import style from '../../css/home/Navbar.module.css';
 
-function NavbarComponent(props) {
-  const { main } = props;
-
+function NavbarComponent({ main }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);

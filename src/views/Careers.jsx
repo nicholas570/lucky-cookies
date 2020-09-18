@@ -5,8 +5,7 @@ import Navbar from '../containers/general/Navbar';
 import Footer from '../containers/general/Footer';
 import Jobs from '../containers/careers/Jobs';
 
-function Careers(props) {
-  const { main, address, jobs } = props;
+function Careers({ main, address, jobs }) {
   return (
     <>
       <Navbar main={main} />

@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-function Contents(props) {
-  const { menu, snacks, mainCourses, desserts, drinks } = props;
+function Contents({ menu, snacks, mainCourses, desserts, drinks }) {
   return (
     <Container className="text-left">
       <Row className="mb-3">

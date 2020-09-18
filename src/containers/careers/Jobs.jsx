@@ -5,9 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import Job from '../../components/careers/Job';
 
-function Jobs(props) {
-  const { jobs } = props;
-
+function Jobs({ jobs }) {
   return (
     <Container fluid className="p-5">
       <Row>

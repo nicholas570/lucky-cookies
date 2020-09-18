@@ -12,19 +12,17 @@ import Iframe from '../containers/home/Iframe';
 import FindUs from '../containers/home/FindUs';
 import Footer from '../containers/general/Footer';
 
-function Home(props) {
-  const {
-    main,
-    content,
-    pics,
-    offers,
-    address,
-    contacts,
-    newsLetter,
-    partners,
-    openings,
-  } = props;
-
+function Home({
+  main,
+  content,
+  pics,
+  offers,
+  address,
+  contacts,
+  newsLetter,
+  partners,
+  openings,
+}) {
   return (
     <>
       <Navbar main={main} />

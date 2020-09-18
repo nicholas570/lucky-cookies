@@ -5,8 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 import NewsLetterForm from '../../components/home/NewsLettter_Form';
 
-function NewsLetter(props) {
-  const { newsLetter } = props;
+function NewsLetter({ newsLetter }) {
   return (
     <Container
       fluid

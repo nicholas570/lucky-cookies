@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function TextContent(props) {
-  const { content } = props;
-
+function TextContent({ content }) {
   return (
     <div>
       <p className="text-left">{content.what}</p>

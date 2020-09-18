@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Col } from 'react-bootstrap';
 
-function Job(props) {
-  const { job } = props;
+function Job({ job }) {
   return (
     <Col className="col-md-6 offset-md-3 mb-5 text-left">
       <p className="text-danger font-weight-bold mb-3">{job.title}</p>

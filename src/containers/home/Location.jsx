@@ -6,9 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Content from '../../components/home/Location_Content';
 import Info from '../../components/home/Location_Info';
 
-function Location(props) {
-  const { content, address, contacts, openings } = props;
-
+function Location({ content, address, contacts, openings }) {
   return (
     <Container className="mt-5 p-5">
       <Row>

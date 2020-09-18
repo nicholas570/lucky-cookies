@@ -5,9 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import { Container } from 'react-bootstrap';
 
-function CarouselComponent(props) {
-  const { pics } = props;
-
+function CarouselComponent({ pics }) {
   return (
     <Container fluid className="p-3 p-md-5">
       <Carousel>

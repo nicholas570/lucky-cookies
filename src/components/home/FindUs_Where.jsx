@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Where(props) {
-  const { content } = props;
+function Where({ content }) {
   return (
     <div className="text-left mb-5">
       <p>{content.where}</p>

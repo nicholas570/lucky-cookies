@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Address(props) {
-  const { address } = props;
-
+function Address({ address }) {
   return (
     <div className="mt-3 mt-md-0">
       <p className="font-weight-bold mb-3">Address</p>

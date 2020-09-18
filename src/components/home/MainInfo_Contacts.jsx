@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Contacts(props) {
-  const { contacts } = props;
-
+function Contacts({ contacts }) {
   return (
     <div className="mt-3 mt-md-0">
       <p className="font-weight-bold mb-3">Contacts</p>

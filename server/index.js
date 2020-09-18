@@ -3,15 +3,16 @@ const express = require('express');
 const dotenv = require('dotenv');
 const transporter = require('./config');
 
+const port = process.env.PORT || 5000;
 dotenv.config();
-
 const app = express();
 
 const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.json());
 app.use(express.static(buildPath));
 app.use(express.static('public'));
-app.use(express.json());
 
+// app serving index but form not working
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
@@ -46,6 +47,7 @@ app.post('/send', (req, res) => {
   }
 });
 
-app.listen(3030, () => {
-  'server start on port 3030';
+app.listen(port, () => {
+  // eslint-disable-next-line
+  console.log(`server start on ${port}`);
 });

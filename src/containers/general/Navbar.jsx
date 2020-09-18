@@ -26,9 +26,9 @@ function NavbarComponent(props) {
   return (
     <div>
       <Navbar
-        className="d-flex flex-row justify-content-around mt-5 mb-3"
+        className="d-flex flex-row justify-content-around mt-5 mb-3 p-5"
         light
-        expand="md"
+        expand="lg"
       >
         <NavbarText className="text-dark font-weight-bold d-none d-md-block">
           {main.motto}
@@ -38,7 +38,7 @@ function NavbarComponent(props) {
           <h6 className="font-weight-bold text-dark">{main.description}</h6>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse className={style.container} isOpen={isOpen} navbar>
+        <Collapse className="flex-grow-0" isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
               <NavLink className="font-weight-bold" href="/menu">

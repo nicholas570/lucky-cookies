@@ -88,8 +88,9 @@
     "image": "newsLetter.jpg"
   },
   "shop": {
-    "description": "We are cookie, coffee and tea expert. Here tou can order and pay online. Orders have to be made before 8pm for the next day, can be taken at the shop or delivered subject to availability. Delivered only in city center (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Chantiers Navals, Gare)",
-    "partners text": "Our cookies are also available at our friends shops. ",
+    "description": "Sur notre boutique vous pouvez commander et payer en ligne vos pains au levain et gourmandises préférés. Les commandes enregistrées avant 20h chaque jour pourront être collectées en boutique ou livrées le lendemain dans la limite des stocks disponibles. Commandes et livraisons possibles du mardi au samedi (fermé le lundi et le dimanche). Dans les quartiers du centre (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Trentemoult, Chantenay et d’autres).",
+    "partnersText": "Nos cookies et gourmandises sont aussi disponibles chez nos amis épiciers du centre ville.",
+    "partnersMap": "https://www.google.com/maps/d/u/0/edit?mid=1dsByJksUetvQozcOHbopL-p0ESNxUkLG&ll=47.21089472092706%2C-1.5546299188871604&z=14",
     "partners": [
       "Ô Bocal ",
       "Epicerie Equitable",
@@ -99,59 +100,6 @@
       "L'Absence"
     ]
   },
-  "menu": {
-    "text": "Notre menu change chaque semaine, n’hésitez pas à nous contacter pour obtenir plus d’informations et effectuer une réservations",
-    "from": "7",
-    "to": "14",
-    "month": "Janvier",
-    "snacks": [
-      { "id": 1, "name": "Tarte du jour", "price": 4.5 },
-      {
-        "id": 2,
-        "name": "Sandwich végétarien (aubergine, tomate confite, courgette, pesto)",
-        "price": 4
-      },
-      {
-        "id": 3,
-        "name": "Sandwich italien (coppa, tomate confite, mozza di buffala, pesto)",
-        "price": 5
-      }
-    ],
-    "mainCourses": [
-      { "id": 1, "name": "Salade grecque et pain pita maison", "price": 8.5 },
-      {
-        "id": 3,
-        "name": "Patate douce aux épices, labneh et mesclun",
-        "price": 8.5
-      },
-      { "id": 2, "name": "Poulet au citron confit et semoule", "price": 10 }
-    ],
-    "desserts": [
-      { "id": 1, "name": "Cookie", "price": "1.80 - 3" },
-      { "id": 2, "name": "Fromage blanc et granola", "price": 3.5 },
-      { "id": 3, "name": "Tarte aux figues", "price": 3.5 },
-      { "id": 4, "name": "Paris-Brest", "price": 4 },
-      { "id": 5, "name": "Carrot cake", "price": 3.5 }
-    ],
-    "drinks": [
-      { "id": 1, "name": "Café ou thé", "price": "2 - 3.50" },
-      { "id": 2, "name": "Jus de fruits des Coteaux Nantais", "price": 3 },
-      { "id": 3, "name": "Cidre", "price": 3 },
-      { "id": 4, "name": "Bières artisanales", "price": 4 },
-      { "id": 5, "name": "Perrier", "price": 2 }
-    ]
-  },
-  "jobs": [
-    {
-      "id": 1,
-      "title": "PATISSIER / PATISSIERE EN ALTERNANCE",
-      "description": "Lucky Cookies est à la recherche de son/sa futur.e patissier.e! Au sein d'une équipe de 3 personnes et avec l'aide de notre cheffe, tu seras responsable de la réalisation des patisseries et cookies. Nous travaillons uniquement des produits locaux, de saison, et tout est fait maison. Ambiance bienveillante et playlist participative.",
-      "experience": "debutant accepté",
-      "hours": "39h / semaine",
-      "starting": "Septembre 2020",
-      "mail": "careers@luckycookies.com"
-    }
-  ],
   "goods": [
     {
       "name": "Chocolat chip",
@@ -212,6 +160,59 @@
       "name": "Bag Cafés Do Brasil",
       "price": "4 euros",
       "pic": "tote.jpg"
+    }
+  ],
+  "menu": {
+    "text": "Notre menu change chaque semaine, n’hésitez pas à nous contacter pour obtenir plus d’informations et effectuer une réservations",
+    "from": "7",
+    "to": "14",
+    "month": "Janvier",
+    "snacks": [
+      { "id": 1, "name": "Tarte du jour", "price": 4.5 },
+      {
+        "id": 2,
+        "name": "Sandwich végétarien (aubergine, tomate confite, courgette, pesto)",
+        "price": 4
+      },
+      {
+        "id": 3,
+        "name": "Sandwich italien (coppa, tomate confite, mozza di buffala, pesto)",
+        "price": 5
+      }
+    ],
+    "mainCourses": [
+      { "id": 1, "name": "Salade grecque et pain pita maison", "price": 8.5 },
+      {
+        "id": 3,
+        "name": "Patate douce aux épices, labneh et mesclun",
+        "price": 8.5
+      },
+      { "id": 2, "name": "Poulet au citron confit et semoule", "price": 10 }
+    ],
+    "desserts": [
+      { "id": 1, "name": "Cookie", "price": "1.80 - 3" },
+      { "id": 2, "name": "Fromage blanc et granola", "price": 3.5 },
+      { "id": 3, "name": "Tarte aux figues", "price": 3.5 },
+      { "id": 4, "name": "Paris-Brest", "price": 4 },
+      { "id": 5, "name": "Carrot cake", "price": 3.5 }
+    ],
+    "drinks": [
+      { "id": 1, "name": "Café ou thé", "price": "2 - 3.50" },
+      { "id": 2, "name": "Jus de fruits des Coteaux Nantais", "price": 3 },
+      { "id": 3, "name": "Cidre", "price": 3 },
+      { "id": 4, "name": "Bières artisanales", "price": 4 },
+      { "id": 5, "name": "Perrier", "price": 2 }
+    ]
+  },
+  "jobs": [
+    {
+      "id": 1,
+      "title": "PATISSIER / PATISSIERE EN ALTERNANCE",
+      "description": "Lucky Cookies est à la recherche de son/sa futur.e patissier.e! Au sein d'une équipe de 3 personnes et avec l'aide de notre cheffe, tu seras responsable de la réalisation des patisseries et cookies. Nous travaillons uniquement des produits locaux, de saison, et tout est fait maison. Ambiance bienveillante et playlist participative.",
+      "experience": "debutant accepté",
+      "hours": "39h / semaine",
+      "starting": "Septembre 2020",
+      "mail": "careers@luckycookies.com"
     }
   ]
 }

@@ -12,6 +12,7 @@ a {
 
 a:hover {
   color: #bdbdbd;
+  transition: color 0.3s;
 }
 
 .nav-font-color {

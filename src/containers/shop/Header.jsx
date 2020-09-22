@@ -8,8 +8,8 @@ import SalePoints from '../../components/shop/SalePoints';
 
 function Header({ shop, goods }) {
   return (
-    <Container className="border border-danger">
-      <Row className="d-flex flex-column flex-md-row border border-primary">
+    <Container>
+      <Row className="d-flex flex-column flex-md-row">
         <Col md={8}>
           <Rules shop={shop} goods={goods} />
         </Col>

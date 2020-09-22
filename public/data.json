@@ -103,12 +103,12 @@
   "goods": [
     {
       "name": "Chocolat chip",
-      "price": "2 euros",
+      "price": "2.20 euros",
       "pic": "cookie.jpg"
     },
     {
-      "name": "Salted caramel",
-      "price": "2 euros",
+      "name": "Matcha",
+      "price": "2.50 euros",
       "pic": "cookie2.jpg"
     },
     {
@@ -125,6 +125,11 @@
       "name": "Chocolat & salted caramel",
       "price": "3 euros",
       "pic": "cookie5.jpg"
+    },
+    {
+      "name": "Nuts",
+      "price": "3 euros",
+      "pic": "cookie6.jpg"
     },
     {
       "name": "Salted caramel 250gr",

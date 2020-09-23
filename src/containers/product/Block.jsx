@@ -1,22 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import ProductForm from '../../components/product/ProductForm';
-import ProductImage from '../../components/product/ProductImage';
-import ProductDescription from '../../components/product/ProductDescription';
-
-function Block({ product }) {
+function Block() {
   return (
     <div>
-      <ProductForm />
-      <ProductImage product={product} />
-      <ProductDescription />
+      <h1>Working on it, come back later!</h1>
     </div>
   );
 }
-
-Block.propTypes = {
-  product: PropTypes.shape.isRequired,
-};
 
 export default Block;

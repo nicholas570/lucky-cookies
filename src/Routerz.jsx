@@ -60,7 +60,7 @@ function Routerz({
           <Shop main={main} address={address} shop={shop} goods={goods} />
         </Route>
         <Route path="/product/:id">
-          <Product main={main} address={address} />
+          <Product main={main} address={address} goods={goods} />
         </Route>
         <Route path="/careers">
           <Careers main={main} address={address} jobs={jobs} />

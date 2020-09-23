@@ -102,17 +102,17 @@
   },
   "goods": [
     {
-      "name": "Chocolat chip",
+      "name": "Pépites de chocolat",
       "price": "2.20 euros",
       "pic": "cookie.jpg"
     },
     {
-      "name": "Matcha",
+      "name": "Thé matcha",
       "price": "2.50 euros",
       "pic": "cookie2.jpg"
     },
     {
-      "name": "Chocolat & macadamia nuts",
+      "name": "Chocolat & noix de macadamia",
       "price": "2.70 euros",
       "pic": "cookie3.jpg"
     },
@@ -122,12 +122,12 @@
       "pic": "cookie4.jpg"
     },
     {
-      "name": "Chocolat & salted caramel",
+      "name": "Chocolat & caramel",
       "price": "3 euros",
       "pic": "cookie5.jpg"
     },
     {
-      "name": "Nuts",
+      "name": "Noix & canelle",
       "price": "3 euros",
       "pic": "cookie6.jpg"
     },
@@ -137,42 +137,42 @@
       "pic": "carrotCake.jpg"
     },
     {
-      "name": "Salted caramel 250gr",
+      "name": "Caramel au beurre 1/2 sel 250gr",
       "price": "4.50 euros",
       "pic": "caramel.jpg"
     },
     {
-      "name": "Dark roast 100% arabica 500gr",
+      "name": "100% arabica Dark roast 500gr",
       "price": "8 euros",
       "pic": "coffee.jpg"
     },
     {
-      "name": "Fazenda Rio Verde 100% arabica 500gr",
+      "name": "100% arabica Fazenda Rio Verde 500gr",
       "price": "9.90 euros",
       "pic": "coffee2.jpg"
     },
     {
-      "name": "Amity Brothers 100% robusta 500gr",
+      "name": "100% robusta Amity Brothers 500gr",
       "price": "10.50 euros",
       "pic": "coffee3.jpg"
     },
     {
-      "name": "Amity Brothers 100% robusta 500gr",
+      "name": "100% robusta Docker 500gr",
       "price": "10.50 euros",
       "pic": "coffee4.jpg"
     },
     {
-      "name": "Japanese mocha 500gr",
+      "name": "Mocha japonais 500gr",
       "price": "6.50 euros",
       "pic": "tea.jpg"
     },
     {
-      "name": "Detox 10x100gr",
+      "name": "Thé détox 10x100gr",
       "price": "16 euros",
       "pic": "tea2.jpg"
     },
     {
-      "name": "ceramiques",
+      "name": "Tasse céramique",
       "price": "7 euros",
       "pic": "ceramics.jpg"
     }

@@ -112,12 +112,12 @@
       "pic": "cookie2.jpg"
     },
     {
-      "name": "Chocolat & noix de macadamia",
+      "name": "Macadamia",
       "price": "2.70 euros",
       "pic": "cookie3.jpg"
     },
     {
-      "name": "100% chocolat & tonka",
+      "name": "Chocolat & tonka",
       "price": "2.70 euros",
       "pic": "cookie4.jpg"
     },
@@ -137,32 +137,32 @@
       "pic": "carrotCake.jpg"
     },
     {
-      "name": "Caramel au beurre 1/2 sel 250gr",
+      "name": "Caramel 1/2 sel 250gr",
       "price": "4.50 euros",
       "pic": "caramel.jpg"
     },
     {
-      "name": "100% arabica Dark roast 500gr",
+      "name": "Arabica Dark roast",
       "price": "8 euros",
       "pic": "coffee.jpg"
     },
     {
-      "name": "100% arabica Fazenda Rio Verde 500gr",
+      "name": "Arabica Rio Verde",
       "price": "9.90 euros",
       "pic": "coffee2.jpg"
     },
     {
-      "name": "100% robusta Amity Brothers 500gr",
+      "name": "Amity Brothers",
       "price": "10.50 euros",
       "pic": "coffee3.jpg"
     },
     {
-      "name": "100% robusta Docker 500gr",
+      "name": "100% robusta Docker",
       "price": "10.50 euros",
       "pic": "coffee4.jpg"
     },
     {
-      "name": "Mocha japonais 500gr",
+      "name": "Mocha japonais",
       "price": "6.50 euros",
       "pic": "tea.jpg"
     },

@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 function Product({ good }) {
   return (
-    <Col md={4} className="p-0">
+    <Col md={4} className="p-0 mb-3">
       <Card style={{ width: '100' }} className="border border-0 px-2">
         <Card.Img
           variant="top"

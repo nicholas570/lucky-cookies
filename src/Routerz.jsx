@@ -6,6 +6,7 @@ import Home from './views/Home';
 import Shop from './views/Shop';
 import Menu from './views/Menu';
 import Careers from './views/Careers';
+import Product from './views/Product';
 
 function Routerz({
   main,
@@ -57,6 +58,9 @@ function Routerz({
         </Route>
         <Route path="/shop">
           <Shop main={main} address={address} shop={shop} goods={goods} />
+        </Route>
+        <Route path="/product/:id">
+          <Product main={main} address={address} />
         </Route>
         <Route path="/careers">
           <Careers main={main} address={address} jobs={jobs} />

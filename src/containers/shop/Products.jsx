@@ -10,7 +10,7 @@ function Products({ goods }) {
     <Container>
       <Row>
         {goods.map((good) => {
-          return <Product good={good} />;
+          return <Product good={good} key={good.id} />;
         })}
       </Row>
     </Container>

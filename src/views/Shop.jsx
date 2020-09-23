@@ -6,6 +6,7 @@ import Footer from '../containers/general/Footer';
 import Header from '../containers/shop/Header';
 import Products from '../containers/shop/Products';
 
+
 function Shop({ main, address, shop, goods }) {
   return (
     <div>

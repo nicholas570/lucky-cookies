@@ -4,13 +4,15 @@ import PropTypes from 'prop-types';
 import { Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
+import style from '../../css/shop/cardImage.module.css';
+
 function Product({ good }) {
   return (
     <Col md={4} className="p-0 mb-3">
       <Card style={{ width: '100' }} className="border border-0 px-2">
         <Card.Img
           variant="top"
-          className="d-block w-100 h-75"
+          className={style.image}
           src={`/assets/images/shop/${good.pic}`}
         />
         <Card.Body>

@@ -23,13 +23,18 @@ function ContactsForm() {
         .post('/send', { ...state })
         .then((res) => {
           setResult(res.data);
-          setState({ name: '', email: '', subject: '', message: '' });
+          setState({
+            firstName: '',
+            lastName: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
         })
         .catch(() => {
           setResult({ success: false, message: 'Something went wrong' });
         });
     }
-
     setValidated(true);
   };
 

@@ -88,8 +88,9 @@
     "image": "newsLetter.jpg"
   },
   "shop": {
-    "description": "We are cookie, coffee and tea expert. Here tou can order and pay online. Orders have to be made before 8pm for the next day, can be taken at the shop or delivered subject to availability. Delivered only in city center (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Chantiers Navals, Gare)",
-    "partners text": "Our cookies are also available at our friends shops. ",
+    "description": "Sur notre boutique vous pouvez commander et payer en ligne vos pains au levain et gourmandises préférés. Les commandes enregistrées avant 20h chaque jour pourront être collectées en boutique ou livrées le lendemain dans la limite des stocks disponibles. Commandes et livraisons possibles du mardi au samedi (fermé le lundi et le dimanche). Dans les quartiers du centre (Ile de Nantes, Talensac, Viarme, Dobré, Cathédrale, Saint Donatien, Trentemoult, Chantenay et d’autres).",
+    "partnersText": "Nos cookies et gourmandises sont aussi disponibles chez nos amis épiciers du centre ville.",
+    "partnersMap": "https://www.google.com/maps/d/u/0/edit?mid=1dsByJksUetvQozcOHbopL-p0ESNxUkLG&ll=47.21089472092706%2C-1.5546299188871604&z=14",
     "partners": [
       "Ô Bocal ",
       "Epicerie Equitable",
@@ -99,6 +100,98 @@
       "L'Absence"
     ]
   },
+  "goods": [
+    {
+      "id": 0,
+      "name": "Pépites de chocolat",
+      "price": "2.20 euros",
+      "pic": "cookie.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Thé matcha",
+      "price": "2.50 euros",
+      "pic": "cookie2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Macadamia",
+      "price": "2.70 euros",
+      "pic": "cookie3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chocolat & tonka",
+      "price": "2.70 euros",
+      "pic": "cookie4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chocolat & caramel",
+      "price": "3 euros",
+      "pic": "cookie5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Noix & canelle",
+      "price": "3 euros",
+      "pic": "cookie6.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Carrot cake",
+      "price": "3.20 euros",
+      "pic": "carrotCake.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Caramel 1/2 sel 250gr",
+      "price": "4.50 euros",
+      "pic": "caramel.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Arabica Dark roast",
+      "price": "8 euros",
+      "pic": "coffee.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Arabica Rio Verde",
+      "price": "9.90 euros",
+      "pic": "coffee2.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Amity Brothers",
+      "price": "10.50 euros",
+      "pic": "coffee3.jpg"
+    },
+    {
+      "id": 11,
+      "name": "100% robusta Docker",
+      "price": "10.50 euros",
+      "pic": "coffee4.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Mocha japonais",
+      "price": "6.50 euros",
+      "pic": "tea.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Thé détox 10x100gr",
+      "price": "16 euros",
+      "pic": "tea2.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Tasse céramique",
+      "price": "7 euros",
+      "pic": "ceramics.jpg"
+    }
+  ],
   "menu": {
     "text": "Notre menu change chaque semaine, n’hésitez pas à nous contacter pour obtenir plus d’informations et effectuer une réservations",
     "from": "7",
@@ -150,68 +243,6 @@
       "hours": "39h / semaine",
       "starting": "Septembre 2020",
       "mail": "careers@luckycookies.com"
-    }
-  ],
-  "goods": [
-    {
-      "name": "Chocolat chip",
-      "price": "2 euros",
-      "pic": "cookie.jpg"
-    },
-    {
-      "name": "Salted caramel",
-      "price": "2 euros",
-      "pic": "cookie2.jpg"
-    },
-    {
-      "name": "Chocolat & macadamia nuts",
-      "price": "2.70 euros",
-      "pic": "cookie3.jpg"
-    },
-    {
-      "name": "100% chocolat & tonka",
-      "price": "2.70 euros",
-      "pic": "cookie4.jpg"
-    },
-    {
-      "name": "Chocolat & salted caramel",
-      "price": "3 euros",
-      "pic": "cookie5.jpg"
-    },
-    {
-      "name": "Salted caramel 250gr",
-      "price": "4.50 euros",
-      "pic": "caramel.jpg"
-    },
-    {
-      "name": "Dark roast 100% arabica 500gr",
-      "price": "8 euros",
-      "pic": "coffee.jpg"
-    },
-    {
-      "name": "Fazenda Rio Verde 100% arabica 500gr",
-      "price": "9.90 euros",
-      "pic": "coffee2.jpg"
-    },
-    {
-      "name": "Amity Brothers 100% robusta 500gr",
-      "price": "10.50 euros",
-      "pic": "coffee3.jpg"
-    },
-    {
-      "name": "Japanese mocha 500gr",
-      "price": "6.50 euros",
-      "pic": "tea.jpg"
-    },
-    {
-      "name": "Detox 10x100gr",
-      "price": "16 euros",
-      "pic": "tea2.jpg"
-    },
-    {
-      "name": "Bag Cafés Do Brasil",
-      "price": "4 euros",
-      "pic": "tote.jpg"
     }
   ]
 }

@@ -7,7 +7,7 @@ import Product from '../../components/shop/Product';
 
 function Products({ goods }) {
   return (
-    <Container className="border border-primary">
+    <Container>
       <Row>
         {goods.map((good) => {
           return <Product good={good} />;

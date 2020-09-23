@@ -157,6 +157,11 @@
       "pic": "coffee3.jpg"
     },
     {
+      "name": "Amity Brothers 100% robusta 500gr",
+      "price": "10.50 euros",
+      "pic": "coffee4.jpg"
+    },
+    {
       "name": "Japanese mocha 500gr",
       "price": "6.50 euros",
       "pic": "tea.jpg"
@@ -167,9 +172,9 @@
       "pic": "tea2.jpg"
     },
     {
-      "name": "Bag Cafés Do Brasil",
-      "price": "4 euros",
-      "pic": "tote.jpg"
+      "name": "ceramiques",
+      "price": "7 euros",
+      "pic": "ceramics.jpg"
     }
   ],
   "menu": {

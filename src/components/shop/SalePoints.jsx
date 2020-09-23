@@ -11,7 +11,7 @@ function SalePoints({ shop }) {
       <p className="text-left">
         Vous pouvez consulter
         {'  '}
-        <a href={shop.partnersMap} target="_blank" rel="noreferrer">
+        <a href={shop.partnersMap} target="_blank" rel="noopener noreferrer">
           la carte des Amis de La Maison ici.
         </a>
       </p>

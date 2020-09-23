@@ -132,6 +132,11 @@
       "pic": "cookie6.jpg"
     },
     {
+      "name": "Carrot cake",
+      "price": "3.20 euros",
+      "pic": "carrotCake.jpg"
+    },
+    {
       "name": "Salted caramel 250gr",
       "price": "4.50 euros",
       "pic": "caramel.jpg"

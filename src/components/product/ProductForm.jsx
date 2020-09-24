@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
 import { Col, Form, Button } from 'react-bootstrap';
+import { ArrowLeft } from 'react-bootstrap-icons';
 
 import style from '../../css/product/productForm.module.css';
 import ProductIngredients from './ProductIngredients';
@@ -37,7 +39,7 @@ function ProductForm({ product }) {
       </p>
 
       <ProductIngredients product={product} />
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} className="mb-3">
         <Form.Group className="mb-3">
           <Form.Label className="text-dark font-weight-bold">
             Quantity
@@ -64,6 +66,10 @@ function ProductForm({ product }) {
           {success ? 'ADDED' : 'ADD'}
         </Button>
       </Form>
+
+      <Link to="/shop">
+        <ArrowLeft />
+      </Link>
     </Col>
   );
 }

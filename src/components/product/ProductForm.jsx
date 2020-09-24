@@ -36,7 +36,7 @@ function ProductForm({ product }) {
         corrupti laborum?
       </p>
 
-      <ProductIngredients ingredients={product.ingredients} />
+      <ProductIngredients product={product} />
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label className="text-dark font-weight-bold">

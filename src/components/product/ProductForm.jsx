@@ -20,7 +20,7 @@ function ProductForm({ product }) {
 
       <ProductIngredients product={product} />
       <Form>
-        <Form.Group controlId="quantity" className="mb-3">
+        <Form.Group className="mb-3">
           <Form.Label className="text-dark font-weight-bold">
             Quantity
           </Form.Label>

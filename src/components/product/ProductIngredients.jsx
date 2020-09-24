@@ -2,14 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ProductIngredients({ product }) {
+  const { ingredients } = product;
   return (
     <>
-      <p>Ingredients</p>
-      <div className="text-left">
-        {product.ingredients.map((ingredient) => {
-          return <p>{ingredient}</p>;
-        })}
-      </div>
+      {ingredients && (
+        <>
+          <p>Ingredients</p>
+          <div className="text-left">
+            {product.ingredients.map((ingredient) => {
+              return <p key={ingredient.id}>{ingredient}</p>;
+            })}
+          </div>
+        </>
+      )}
     </>
   );
 }

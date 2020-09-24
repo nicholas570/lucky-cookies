@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Col, Form, Button } from 'react-bootstrap';
 
 import style from '../../css/product/productForm.module.css';
+import ProductIngredients from './ProductIngredients';
 
 function ProductForm({ product }) {
   return (
@@ -16,6 +17,8 @@ function ProductForm({ product }) {
         placeat doloribus eveniet maxime fuga veritatis harum ut numquam. Ea,
         corrupti laborum?
       </p>
+
+      <ProductIngredients product={product} />
       <Form>
         <Form.Group controlId="quantity" className="mb-3">
           <Form.Label className="text-dark font-weight-bold">

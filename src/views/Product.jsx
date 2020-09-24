@@ -38,7 +38,6 @@ function Product({ main, address }) {
       ) : (
         <Block product={product} />
       )}
-
       <Footer main={main} address={address} />
     </div>
   );

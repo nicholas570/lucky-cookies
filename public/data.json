@@ -104,19 +104,19 @@
     {
       "id": 0,
       "name": "Pépites de chocolat",
-      "price": "2.20 euros",
+      "price": "2.20 €",
       "pic": "cookie.jpg"
     },
     {
       "id": 1,
       "name": "Thé matcha",
-      "price": "2.50 euros",
+      "price": "2.50 €",
       "pic": "cookie2.jpg"
     },
     {
       "id": 2,
       "name": "Macadamia",
-      "price": "2.70 euros",
+      "price": "2.70 €",
       "pic": "cookie3.jpg"
     },
     {
@@ -128,13 +128,13 @@
     {
       "id": 4,
       "name": "Chocolat & caramel",
-      "price": "3 euros",
+      "price": "3 euros €",
       "pic": "cookie5.jpg"
     },
     {
       "id": 5,
       "name": "Noix & canelle",
-      "price": "3 euros",
+      "price": "3 €",
       "pic": "cookie6.jpg"
     },
     {
@@ -146,49 +146,49 @@
     {
       "id": 7,
       "name": "Caramel 1/2 sel 250gr",
-      "price": "4.50 euros",
+      "price": "4.50 €",
       "pic": "caramel.jpg"
     },
     {
       "id": 8,
       "name": "Arabica Dark roast",
-      "price": "8 euros",
+      "price": "8 €",
       "pic": "coffee.jpg"
     },
     {
       "id": 9,
       "name": "Arabica Rio Verde",
-      "price": "9.90 euros",
+      "price": "9.90 €",
       "pic": "coffee2.jpg"
     },
     {
       "id": 10,
       "name": "Amity Brothers",
-      "price": "10.50 euros",
+      "price": "10.50 €",
       "pic": "coffee3.jpg"
     },
     {
       "id": 11,
       "name": "100% robusta Docker",
-      "price": "10.50 euros",
+      "price": "10.50 €",
       "pic": "coffee4.jpg"
     },
     {
       "id": 12,
       "name": "Mocha japonais",
-      "price": "6.50 euros",
+      "price": "6.50 €",
       "pic": "tea.jpg"
     },
     {
       "id": 13,
       "name": "Thé détox 10x100gr",
-      "price": "16 euros",
+      "price": "16 €",
       "pic": "tea2.jpg"
     },
     {
       "id": 14,
       "name": "Tasse céramique",
-      "price": "7 euros",
+      "price": "7 €",
       "pic": "ceramics.jpg"
     }
   ],

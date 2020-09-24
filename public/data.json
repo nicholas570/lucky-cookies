@@ -105,90 +105,119 @@
       "id": 0,
       "name": "Pépites de chocolat",
       "price": "2.20 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "cookie.jpg"
     },
     {
       "id": 1,
       "name": "Thé matcha",
       "price": "2.50 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "cookie2.jpg"
     },
     {
       "id": 2,
       "name": "Macadamia",
       "price": "2.70 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "cookie3.jpg"
     },
     {
       "id": 3,
       "name": "Chocolat & tonka",
       "price": "2.70 euros",
+      "decription": "",
+      "ingredients": "",
       "pic": "cookie4.jpg"
     },
     {
       "id": 4,
       "name": "Chocolat & caramel",
       "price": "3 euros €",
+      "decription": "",
+      "ingredients": "",
       "pic": "cookie5.jpg"
     },
     {
       "id": 5,
       "name": "Noix & canelle",
       "price": "3 €",
+
       "pic": "cookie6.jpg"
     },
     {
       "id": 6,
       "name": "Carrot cake",
       "price": "3.20 euros",
+      "decription": "",
+      "ingredients": "",
       "pic": "carrotCake.jpg"
     },
     {
       "id": 7,
       "name": "Caramel 1/2 sel 250gr",
       "price": "4.50 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "caramel.jpg"
     },
     {
       "id": 8,
       "name": "Arabica Dark roast",
       "price": "8 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "coffee.jpg"
     },
     {
       "id": 9,
       "name": "Arabica Rio Verde",
       "price": "9.90 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "coffee2.jpg"
     },
     {
       "id": 10,
       "name": "Amity Brothers",
       "price": "10.50 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "coffee3.jpg"
     },
     {
       "id": 11,
       "name": "100% robusta Docker",
       "price": "10.50 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "coffee4.jpg"
     },
     {
       "id": 12,
       "name": "Mocha japonais",
       "price": "6.50 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "tea.jpg"
     },
     {
       "id": 13,
       "name": "Thé détox 10x100gr",
       "price": "16 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "tea2.jpg"
     },
     {
       "id": 14,
       "name": "Tasse céramique",
       "price": "7 €",
+      "decription": "",
+      "ingredients": "",
       "pic": "ceramics.jpg"
     }
   ],

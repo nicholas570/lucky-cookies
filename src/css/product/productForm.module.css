@@ -1,0 +1,17 @@
+#quantity {
+  border: 2px solid;
+  border-radius: 0;
+}
+
+#quantity:focus {
+  border: 2px solid;
+  border-radius: 0;
+}
+
+#add {
+  border-radius: 0;
+}
+
+#add:hover {
+  color: #000000;
+}

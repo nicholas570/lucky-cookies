@@ -1,7 +1,52 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function ProductForm() {
-  return <div>UN FORMULAIRE</div>;
+import { Col, Form, Button } from 'react-bootstrap';
+
+import style from '../../css/product/productForm.module.css';
+
+function ProductForm({ product }) {
+  return (
+    <Col className="text-left col-md-4 offset-md-1">
+      <h1 className="font-weight-bold mb-3">{product.name}</h1>
+      <p className="mb-3">{product.price}</p>
+      <p className="mb-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+        consequatur iste reiciendis delectus qui cupiditate. Cum quam dolore
+        placeat doloribus eveniet maxime fuga veritatis harum ut numquam. Ea,
+        corrupti laborum?
+      </p>
+      <Form>
+        <Form.Group controlId="quantity" className="mb-3">
+          <Form.Label className="text-dark font-weight-bold">
+            Quantity
+          </Form.Label>
+          <Col md={2} className="p-0">
+            <Form.Control
+              id={style.quantity}
+              type="number"
+              placeholder="1"
+              min="1"
+            />
+          </Col>
+        </Form.Group>
+
+        <Button
+          variant="light"
+          size="lg"
+          className="btn btn-outline-danger"
+          id={style.add}
+          type="submit"
+        >
+          ADD
+        </Button>
+      </Form>
+    </Col>
+  );
 }
+
+ProductForm.propTypes = {
+  product: PropTypes.shape.isRequired,
+};
 
 export default ProductForm;

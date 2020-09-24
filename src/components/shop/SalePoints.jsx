@@ -12,7 +12,7 @@ function SalePoints({ shop }) {
         Vous pouvez consulter
         {'  '}
         <a href={shop.partnersMap} target="_blank" rel="noopener noreferrer">
-          la carte des Amis de La Maison ici.
+          la carte des Amis de Lucky Cookies ici.
         </a>
       </p>
     </>

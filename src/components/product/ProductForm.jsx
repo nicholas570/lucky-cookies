@@ -31,12 +31,7 @@ function ProductForm({ product }) {
     <Col className="text-left col-md-4 offset-md-1">
       <h1 className="font-weight-bold mb-3">{product.name}</h1>
       <p className="mb-3">{product.price}</p>
-      <p className="mb-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-        consequatur iste reiciendis delectus qui cupiditate. Cum quam dolore
-        placeat doloribus eveniet maxime fuga veritatis harum ut numquam. Ea,
-        corrupti laborum?
-      </p>
+      <p className="mb-3">{product.description}</p>
 
       <ProductIngredients product={product} />
       <Form onSubmit={handleSubmit} className="mb-3">

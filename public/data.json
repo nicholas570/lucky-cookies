@@ -105,7 +105,7 @@
       "id": 0,
       "name": "Pépites de chocolat",
       "price": "2.20 €",
-      "description": "",
+      "description": "Cookie aux pépites de chocolat noir et fleur de sel",
       "ingredients": [
         "Farine bio certifée",
         "Beurre bio certifié",
@@ -118,7 +118,7 @@
       "id": 1,
       "name": "Thé matcha",
       "price": "2.50 €",
-      "description": "",
+      "description": "Cookie au thé matcha et gingembre",
       "ingredients": [
         "Farine bio certifée",
         "Beurre bio certifié",
@@ -131,7 +131,7 @@
       "id": 2,
       "name": "Macadamia",
       "price": "2.70 €",
-      "description": "",
+      "description": "Cookie aux noix de macadamia entière et vanille",
       "ingredients": [
         "Farine bio certifée",
         "Beurre bio certifié",
@@ -145,7 +145,7 @@
       "id": 3,
       "name": "Chocolat & tonka",
       "price": "2.70 euros",
-      "description": "",
+      "description": "Cookie 100 % chocolat noir et parfumé à la fève de tonka",
       "ingredients": [
         "Farine bio certifée",
         "Beurre bio certifié",
@@ -158,15 +158,15 @@
     },
     {
       "id": 4,
-      "name": "Chocolat & caramel",
+      "name": "Chocolat & beurre de cacahuète",
       "price": "3 euros €",
-      "description": "",
+      "description": "Cookie au cacao et beurre de cacahuète",
       "ingredients": [
         "Farine bio certifée",
         "Beurre bio certifié",
         "Oeufs bio du GAEC de Blancheville",
         "Cacao 100%",
-        "Caramel au beurre 1/2 sel maison"
+        "Beurre de cacahuète maison"
       ],
       "pic": "cookie5.jpg"
     },
@@ -174,13 +174,13 @@
       "id": 5,
       "name": "Noix & canelle",
       "price": "3 €",
-      "description": "",
+      "description": "Cookie aux noix torréfiées et parfumé à la cannelle",
       "ingredients": [
         "Farine bio certifée",
         "Beurre bio certifié",
         "Oeufs bio du GAEC de Blancheville",
-        "Cacao 100%",
-        "Caramel au beurre 1/2 sel maison"
+        "Noix",
+        "Cannelle"
       ],
       "pic": "cookie6.jpg"
     },
@@ -188,13 +188,14 @@
       "id": 6,
       "name": "Carrot cake",
       "price": "3.20 euros",
-      "description": "",
+      "description": "Carrot cake tradionelle aux épices et cream cheese",
       "ingredients": [
         "Farine bio certifée",
         "Oeufs bio du GAEC de Blancheville",
         "Mélange d'épices maison (cannelle, anis, tonka, gingembre)",
         "Noix",
-        "Fruits confits"
+        "Fruits confits",
+        "Cream cheese"
       ],
       "pic": "carrotCake.jpg"
     },
@@ -202,57 +203,57 @@
       "id": 7,
       "name": "Caramel 1/2 sel 250gr",
       "price": "4.50 €",
-      "description": "",
+      "description": "Caramel au beurre salé maison",
       "ingredients": ["Beurre 1/2 sel bio certifée", "Crème entière"],
       "pic": "caramel.jpg"
     },
     {
       "id": 8,
-      "name": "Arabica Dark roast",
+      "name": "Arabica Dark roast 500gr",
       "price": "8 €",
-      "description": "",
+      "description": "Arabica de Cuba, légère note de chocolat et noisette. Certifié commerce équitable",
       "pic": "coffee.jpg"
     },
     {
       "id": 9,
-      "name": "Arabica Rio Verde",
+      "name": "Arabica Rio Verde 500gr",
       "price": "9.90 €",
-      "description": "",
+      "description": "Arabica du Brésil, arôme fumé et complexe. Certifié commerce équitable",
       "pic": "coffee2.jpg"
     },
     {
       "id": 10,
-      "name": "Amity Brothers",
+      "name": "Amity Brothers 500gr",
       "price": "10.50 €",
-      "description": "",
+      "description": "Arabica américain, torrefaction lente, arôme de canne à sucre",
       "pic": "coffee3.jpg"
     },
     {
       "id": 11,
-      "name": "100% robusta Docker",
+      "name": "100% robusta Docker 500gr",
       "price": "10.50 €",
-      "description": "",
+      "description": "Puissant robusta à l'amertume prononcée",
       "pic": "coffee4.jpg"
     },
     {
       "id": 12,
-      "name": "Mocha japonais",
-      "price": "6.50 €",
-      "description": "",
+      "name": "Thé vert 250gr",
+      "price": "4 €",
+      "description": "Thé vert parfumé avec un mélange de fleurs",
       "pic": "tea.jpg"
     },
     {
       "id": 13,
-      "name": "Thé détox 10x100gr",
-      "price": "16 €",
-      "description": "",
+      "name": "Thé noir chaï 400gr",
+      "price": "7 €",
+      "description": "Mélange de thé noir et d'épices (girofle et cardamome)",
       "pic": "tea2.jpg"
     },
     {
       "id": 14,
       "name": "Tasse céramique",
       "price": "7 €",
-      "description": "",
+      "description": "Tasse unique réalisée par Sophie Flores",
       "pic": "ceramics.jpg"
     }
   ],

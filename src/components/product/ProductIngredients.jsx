@@ -1,26 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ProductIngredients({ product }) {
-  const { ingredients } = product;
+function ProductIngredients({ ingredients }) {
   return (
     <>
       {ingredients && (
-        <>
-          <p>Ingredients</p>
-          <div className="text-left">
-            {product.ingredients.map((ingredient) => {
+        <div>
+          <p className="font-weight-bold">Ingredients</p>
+          <div className="text-left mb-3">
+            {ingredients.map((ingredient) => {
               return <p key={ingredient.id}>{ingredient}</p>;
             })}
           </div>
-        </>
+        </div>
       )}
     </>
   );
 }
 
 ProductIngredients.propTypes = {
-  product: PropTypes.shape.isRequired,
+  ingredients: PropTypes.shape.isRequired,
 };
 
 export default ProductIngredients;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { Col, Form, Button } from 'react-bootstrap';
@@ -7,6 +7,24 @@ import style from '../../css/product/productForm.module.css';
 import ProductIngredients from './ProductIngredients';
 
 function ProductForm({ product }) {
+  const [quantity, setQuantity] = useState(1);
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+
+    setQuantity(value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const form = e.currentTarget;
+    if (form.checkValidity()) {
+      setSuccess(true);
+    }
+  };
+
   return (
     <Col className="text-left col-md-4 offset-md-1">
       <h1 className="font-weight-bold mb-3">{product.name}</h1>
@@ -18,8 +36,8 @@ function ProductForm({ product }) {
         corrupti laborum?
       </p>
 
-      <ProductIngredients product={product} />
-      <Form>
+      <ProductIngredients ingredients={product.ingredients} />
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label className="text-dark font-weight-bold">
             Quantity
@@ -28,7 +46,9 @@ function ProductForm({ product }) {
             <Form.Control
               id={style.quantity}
               type="number"
-              placeholder="1"
+              value={quantity}
+              onChange={handleChange}
+              name="quantity"
               min="1"
             />
           </Col>
@@ -41,7 +61,7 @@ function ProductForm({ product }) {
           id={style.add}
           type="submit"
         >
-          ADD
+          {success ? 'ADDED' : 'ADD'}
         </Button>
       </Form>
     </Col>

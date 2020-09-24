@@ -105,90 +105,154 @@
       "id": 0,
       "name": "Pépites de chocolat",
       "price": "2.20 €",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Beurre bio certifié",
+        "Oeufs bio du GAEC de Blancheville",
+        "Chocolat noir"
+      ],
       "pic": "cookie.jpg"
     },
     {
       "id": 1,
       "name": "Thé matcha",
       "price": "2.50 €",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Beurre bio certifié",
+        "Oeufs bio du GAEC de Blancheville",
+        "Matcha"
+      ],
       "pic": "cookie2.jpg"
     },
     {
       "id": 2,
       "name": "Macadamia",
       "price": "2.70 €",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Beurre bio certifié",
+        "Oeufs bio du GAEC de Blancheville",
+        "Noix de macadamia torréfiée",
+        "Fleur de sel"
+      ],
       "pic": "cookie3.jpg"
     },
     {
       "id": 3,
       "name": "Chocolat & tonka",
       "price": "2.70 euros",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Beurre bio certifié",
+        "Oeufs bio du GAEC de Blancheville",
+        "Chocolat noir",
+        "Fève de tonka",
+        "Fleur de sel"
+      ],
       "pic": "cookie4.jpg"
     },
     {
       "id": 4,
       "name": "Chocolat & caramel",
       "price": "3 euros €",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Beurre bio certifié",
+        "Oeufs bio du GAEC de Blancheville",
+        "Cacao 100%",
+        "Caramel au beurre 1/2 sel maison"
+      ],
       "pic": "cookie5.jpg"
     },
     {
       "id": 5,
       "name": "Noix & canelle",
       "price": "3 €",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Beurre bio certifié",
+        "Oeufs bio du GAEC de Blancheville",
+        "Cacao 100%",
+        "Caramel au beurre 1/2 sel maison"
+      ],
       "pic": "cookie6.jpg"
     },
     {
       "id": 6,
       "name": "Carrot cake",
       "price": "3.20 euros",
+      "description": "",
+      "ingredients": [
+        "Farine bio certifée",
+        "Oeufs bio du GAEC de Blancheville",
+        "Mélange d'épices maison (cannelle, anis, tonka, gingembre)",
+        "Noix",
+        "Fruits confits"
+      ],
       "pic": "carrotCake.jpg"
     },
     {
       "id": 7,
       "name": "Caramel 1/2 sel 250gr",
       "price": "4.50 €",
+      "description": "",
+      "ingredients": ["Beurre 1/2 sel bio certifée", "Crème entière"],
       "pic": "caramel.jpg"
     },
     {
       "id": 8,
       "name": "Arabica Dark roast",
       "price": "8 €",
+      "description": "",
       "pic": "coffee.jpg"
     },
     {
       "id": 9,
       "name": "Arabica Rio Verde",
       "price": "9.90 €",
+      "description": "",
       "pic": "coffee2.jpg"
     },
     {
       "id": 10,
       "name": "Amity Brothers",
       "price": "10.50 €",
+      "description": "",
       "pic": "coffee3.jpg"
     },
     {
       "id": 11,
       "name": "100% robusta Docker",
       "price": "10.50 €",
+      "description": "",
       "pic": "coffee4.jpg"
     },
     {
       "id": 12,
       "name": "Mocha japonais",
       "price": "6.50 €",
+      "description": "",
       "pic": "tea.jpg"
     },
     {
       "id": 13,
       "name": "Thé détox 10x100gr",
       "price": "16 €",
+      "description": "",
       "pic": "tea2.jpg"
     },
     {
       "id": 14,
       "name": "Tasse céramique",
       "price": "7 €",
+      "description": "",
       "pic": "ceramics.jpg"
     }
   ],

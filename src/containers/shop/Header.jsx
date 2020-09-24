@@ -8,7 +8,7 @@ import SalePoints from '../../components/shop/SalePoints';
 
 function Header({ shop, goods }) {
   return (
-    <Container>
+    <Container className="mb-3">
       <Row className="d-flex flex-column flex-md-row">
         <Col md={8}>
           <Rules shop={shop} goods={goods} />

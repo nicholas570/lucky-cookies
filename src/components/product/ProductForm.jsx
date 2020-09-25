@@ -28,7 +28,7 @@ function ProductForm({ product }) {
   };
 
   return (
-    <Col className="text-left col-md-4 offset-md-1">
+    <Col className="text-left col-md-4 offset-md-1 mb-3">
       <h1 className="font-weight-bold mb-3">{product.name}</h1>
       <p className="mb-3">{product.price}</p>
       <p className="mb-3">{product.description}</p>

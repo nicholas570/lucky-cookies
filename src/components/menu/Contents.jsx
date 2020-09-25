@@ -21,11 +21,19 @@ function Contents({ menu, snacks, mainCourses, desserts, drinks }) {
       <Row>
         <Col className="col-md-6 offset-md-1">
           <div className="mb-3">
-            <p className="font-weight-bold">Formule prix formule 1</p>
+            <p className="font-weight-bold">
+              Formule
+              {'  '}
+              {menu.formule1}
+            </p>
             <p>Snack + dessert + thé,café ou Perrier</p>
           </div>
           <div>
-            <p className="font-weight-bold">Formule prix formule 2</p>
+            <p className="font-weight-bold">
+              Formule
+              {'  '}
+              {menu.formule2}
+            </p>
             <p>Plat du jour + dessert + boisson</p>
           </div>
         </Col>

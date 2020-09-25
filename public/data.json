@@ -262,6 +262,8 @@
     "from": "7",
     "to": "14",
     "month": "Janvier",
+    "formule1": 9,
+    "formule2": 16,
     "snacks": [
       { "id": 1, "name": "Tarte du jour", "price": 4.5 },
       {

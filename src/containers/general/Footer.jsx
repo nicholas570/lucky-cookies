@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
@@ -11,17 +11,19 @@ import Modal from '../contacts/Modal';
 
 import style from '../../css/home/Footer.module.css';
 
-function Footer({ main, address }) {
+function Footer() {
+  const { address, brand, logo } = useSelector((state) => state.data.main);
+
   return (
     <Container fluid className="p-5" id={style.BgColor}>
       <Row className="justify-content-center mb-3">
         <Col xs="6" md="4" lg="2" className="p-3">
-          <Image src={`/assets/images/logo/${main.logo}`} rounded alt="logo" />
+          <Image src={`/assets/images/logo/${logo}`} rounded alt="logo" />
         </Col>
       </Row>
       <Row className="justify-content-center mb-4">
         <Col>
-          <p className="text-muted font-weight-bold">{`${main.brand} (SAS)`}</p>
+          <p className="text-muted font-weight-bold">{`${brand} (SAS)`}</p>
           <p className="text-muted">{address.street}</p>
           <p className="text-muted">{`${address.zip} ${address.city}`}</p>
         </Col>
@@ -83,10 +85,5 @@ function Footer({ main, address }) {
     </Container>
   );
 }
-
-Footer.propTypes = {
-  main: PropTypes.shape.isRequired,
-  address: PropTypes.shape.isRequired,
-};
 
 export default Footer;

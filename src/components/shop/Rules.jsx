@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Rules({ shop }) {
+function Rules() {
+  const { shop } = useSelector((state) => state.data.shop);
   return (
     <div className="mb-5">
       <p className="font-weight-bold text-left mb-3">
@@ -12,7 +13,4 @@ function Rules({ shop }) {
   );
 }
 
-Rules.propTypes = {
-  shop: PropTypes.shape.isRequired,
-};
 export default Rules;

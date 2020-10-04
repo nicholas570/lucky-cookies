@@ -1,24 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Navbar from '../containers/general/Navbar';
 import Footer from '../containers/general/Footer';
 import Jobs from '../containers/careers/Jobs';
 
-function Careers({ main, address, jobs }) {
+function Careers() {
   return (
     <>
-      <Navbar main={main} />
-      <Jobs jobs={jobs} />
-      <Footer main={main} address={address} />
+      <Navbar />
+      <Jobs />
+      <Footer />
     </>
   );
 }
-
-Careers.propTypes = {
-  main: PropTypes.shape.isRequired,
-  address: PropTypes.shape.isRequired,
-  jobs: PropTypes.shape.isRequired,
-};
 
 export default Careers;

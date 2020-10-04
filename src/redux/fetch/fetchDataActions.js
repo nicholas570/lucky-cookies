@@ -1,16 +1,6 @@
-import {
-  FETCH_DATA_REQUEST,
-  FETCH_DATA_SUCCESS,
-  FETCH_DATA_FAILURE,
-} from './fetchDataTypes';
+import { FETCH_DATA_SUCCESS, FETCH_DATA_FAILURE } from './fetchDataTypes';
 
 const axios = require('axios');
-
-export const fetchDataRequest = () => {
-  return {
-    type: FETCH_DATA_REQUEST,
-  };
-};
 
 export const fetchDataSuccess = (data) => {
   return {
@@ -28,11 +18,10 @@ export const fetchDataFailure = (err) => {
 
 export const fetchData = () => {
   return (dispatch) => {
-    dispatch(fetchDataRequest());
     axios
       .get('/data.json')
-      .then((res) => {
-        dispatch(fetchDataSuccess(res.data));
+      .then(({ data }) => {
+        dispatch(fetchDataSuccess(data));
       })
       .catch((err) => {
         dispatch(fetchDataFailure(err.message));

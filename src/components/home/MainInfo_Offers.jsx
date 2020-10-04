@@ -1,22 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Offers({ offers }) {
+function Offers() {
+  const offers = useSelector((state) => state.data.main.offers);
   return (
     <div className="my-5 mt-md-0">
-      {offers.map((offer) => {
-        return (
-          <p className="font-weight-bold m-0" key={offer.id}>
-            {offer.name}
-          </p>
-        );
-      })}
+      {offers &&
+        offers.map((offer) => {
+          return (
+            <p className="font-weight-bold m-0" key={offer.id}>
+              {offer.name}
+            </p>
+          );
+        })}
     </div>
   );
 }
-
-Offers.propTypes = {
-  offers: PropTypes.shape.isRequired,
-};
 
 export default Offers;

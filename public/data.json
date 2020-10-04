@@ -36,7 +36,7 @@
       "where": "Lucky Cookies is actively taking part to our artisan local community. You can find our baked goods in many spots across town, a good way to discover the best food offers in Nantes city. Follow us on social networks for regular updates.",
       "whereFrench": "Lucky Cookies est engagé pour soutenir les artisans locaux qui font vivre les meilleures offres culinaires de notre ville. Vous pouvez trouver nos cookies et gourmandises dans de nombreux commerces et institutions gastronomiques Nantaises. Suivez-vous sur les réseaux et inscrivez-vous à notre newsletter pour recevoir des nouvelles."
     },
-    "pics_carousel": [
+    "carousel": [
       { "id": 1, "image": "baker.jpg" },
       { "id": 2, "image": "ambiance.jpg" },
       { "id": 3, "image": "brunch.jpg" },

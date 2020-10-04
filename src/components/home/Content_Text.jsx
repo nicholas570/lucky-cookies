@@ -1,20 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function TextContent({ content }) {
+function TextContent() {
+  const content = useSelector((state) => state.data.main.content);
   return (
     <div>
-      <p className="text-left">{content.what}</p>
-      <br />
-      <hr />
-      <br />
-      <p className="text-left font-italic">{content.whatFrench}</p>
+      {content && (
+        <>
+          <p className="text-left">{content.what}</p>
+          <br />
+          <hr />
+          <br />
+          <p className="text-left font-italic">{content.whatFrench}</p>
+        </>
+      )}
     </div>
   );
 }
-
-TextContent.propTypes = {
-  content: PropTypes.shape.isRequired,
-};
 
 export default TextContent;

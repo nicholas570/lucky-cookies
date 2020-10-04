@@ -1,22 +1,13 @@
-import {
-  FETCH_DATA_REQUEST,
-  FETCH_DATA_SUCCESS,
-  FETCH_DATA_FAILURE,
-} from './fetchDataTypes';
+import { FETCH_DATA_SUCCESS, FETCH_DATA_FAILURE } from './fetchDataTypes';
 
 const initialState = {
-  loading: false,
-  data: [],
+  loading: true,
+  data: {},
   error: '',
 };
 
 const fetchDataReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_DATA_REQUEST:
-      return {
-        ...state,
-        loading: true,
-      };
     case FETCH_DATA_SUCCESS:
       return {
         loading: false,
@@ -25,7 +16,7 @@ const fetchDataReducer = (state = initialState, action) => {
     case FETCH_DATA_FAILURE:
       return {
         loading: false,
-        data: [],
+        data: {},
         err: action.payload,
       };
     default:

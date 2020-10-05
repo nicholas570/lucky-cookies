@@ -6,13 +6,9 @@ function Contacts() {
 
   return (
     <div className="mt-3 mt-md-0">
-      {contacts && (
-        <>
-          <p className="font-weight-bold mb-3">Contacts</p>
-          <p>{contacts.phone}</p>
-          <p>{contacts.mail}</p>
-        </>
-      )}
+      <p className="font-weight-bold mb-3">Contacts</p>
+      <p>{contacts.phone}</p>
+      <p>{contacts.mail}</p>
     </div>
   );
 }

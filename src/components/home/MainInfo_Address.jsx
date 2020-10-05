@@ -6,13 +6,9 @@ function Address() {
 
   return (
     <div className="mt-3 mt-md-0">
-      {address && (
-        <>
-          <p className="font-weight-bold mb-3">Address</p>
-          <p>{address.street}</p>
-          <p>{`${address.zip} ${address.city}`}</p>
-        </>
-      )}
+      <p className="font-weight-bold mb-3">Address</p>
+      <p>{address.street}</p>
+      <p>{`${address.zip} ${address.city}`}</p>
     </div>
   );
 }

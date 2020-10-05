@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function SalePoints() {
-  const { shop } = useSelector((state) => state.data.shop);
+  const { shop } = useSelector((state) => state.data);
   return (
     <>
       <p className="text-left font-weight-bold text-danger mb-3">

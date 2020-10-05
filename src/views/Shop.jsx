@@ -1,27 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Navbar from '../containers/general/Navbar';
 import Footer from '../containers/general/Footer';
 import Header from '../containers/shop/Header';
 import Products from '../containers/shop/Products';
 
-function Shop({ main, address, shop, goods }) {
+function Shop() {
   return (
     <div>
-      <Navbar main={main} />
-      <Header shop={shop} />
-      <Products goods={goods} />
-      <Footer main={main} address={address} />
+      <Navbar />
+      <Header />
+      <Products />
+      <Footer />
     </div>
   );
 }
-
-Shop.propTypes = {
-  main: PropTypes.shape.isRequired,
-  address: PropTypes.shape.isRequired,
-  shop: PropTypes.shape.isRequired,
-  goods: PropTypes.shape.isRequired,
-};
 
 export default Shop;

@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Offers({ offers }) {
+function Offers() {
+  const offers = useSelector((state) => state.data.main.offers);
   return (
     <div className="my-5 mt-md-0">
       {offers.map((offer) => {
@@ -14,9 +15,5 @@ function Offers({ offers }) {
     </div>
   );
 }
-
-Offers.propTypes = {
-  offers: PropTypes.shape.isRequired,
-};
 
 export default Offers;

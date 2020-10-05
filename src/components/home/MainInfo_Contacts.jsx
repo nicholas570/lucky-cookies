@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Contacts({ contacts }) {
+function Contacts() {
+  const contacts = useSelector((state) => state.data.main.contacts);
+
   return (
     <div className="mt-3 mt-md-0">
       <p className="font-weight-bold mb-3">Contacts</p>
@@ -10,11 +12,5 @@ function Contacts({ contacts }) {
     </div>
   );
 }
-
-Contacts.propTypes = {
-  contacts: PropTypes.shape.isRequired,
-  mail: PropTypes.shape.isRequired,
-  phone: PropTypes.shape.isRequired,
-};
 
 export default Contacts;

@@ -1,11 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Job from '../../components/careers/Job';
 
-function Jobs({ jobs }) {
+function Jobs() {
+  const { jobs } = useSelector((state) => state.data.careers);
   return (
     <Container fluid className="p-5">
       <Row>
@@ -27,9 +28,5 @@ function Jobs({ jobs }) {
     </Container>
   );
 }
-
-Jobs.propTypes = {
-  jobs: PropTypes.shape.isRequired,
-};
 
 export default Jobs;

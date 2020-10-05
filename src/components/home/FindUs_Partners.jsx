@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Partners({ partners }) {
+function Partners() {
+  const { partners } = useSelector((state) => state.data);
+
   return (
     <div className="mb-5">
       {partners.map((partner) => {
@@ -14,9 +16,5 @@ function Partners({ partners }) {
     </div>
   );
 }
-
-Partners.propTypes = {
-  partners: PropTypes.shape.isRequired,
-};
 
 export default Partners;

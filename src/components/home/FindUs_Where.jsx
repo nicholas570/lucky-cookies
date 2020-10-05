@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Where({ content }) {
+function Where() {
+  const content = useSelector((state) => state.data.main.content);
+
   return (
     <div className="text-left mb-5">
       <p>{content.where}</p>
@@ -20,9 +22,5 @@ function Where({ content }) {
     </div>
   );
 }
-
-Where.propTypes = {
-  content: PropTypes.shape.isRequired,
-};
 
 export default Where;

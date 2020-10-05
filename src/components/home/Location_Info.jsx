@@ -1,7 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Info({ address, openings, contacts }) {
+function Info() {
+  const { address, openings, contacts } = useSelector(
+    (state) => state.data.main
+  );
+
   return (
     <div className="text-left mb-5">
       <p className="font-weight-bold">Address</p>
@@ -22,11 +26,5 @@ function Info({ address, openings, contacts }) {
     </div>
   );
 }
-
-Info.propTypes = {
-  address: PropTypes.shape.isRequired,
-  contacts: PropTypes.shape.isRequired,
-  openings: PropTypes.shape.isRequired,
-};
 
 export default Info;

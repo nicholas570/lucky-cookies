@@ -1,24 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 import { Container, Row } from 'react-bootstrap';
 
 import Product from '../../components/shop/Product';
 
-function Products({ goods }) {
+function Products() {
+  const { products } = useSelector((state) => state.data.shop);
   return (
     <Container>
       <Row>
-        {goods.map((good) => {
-          return <Product good={good} key={good.id} />;
+        {products.map((product) => {
+          return <Product product={product} key={product.id} />;
         })}
       </Row>
     </Container>
   );
 }
-
-Products.propTypes = {
-  goods: PropTypes.shape.isRequired,
-};
 
 export default Products;

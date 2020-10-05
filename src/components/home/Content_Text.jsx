@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function TextContent({ content }) {
+function TextContent() {
+  const content = useSelector((state) => state.data.main.content);
+
   return (
     <div>
       <p className="text-left">{content.what}</p>
@@ -12,9 +14,5 @@ function TextContent({ content }) {
     </div>
   );
 }
-
-TextContent.propTypes = {
-  content: PropTypes.shape.isRequired,
-};
 
 export default TextContent;

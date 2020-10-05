@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function Slogan({ content }) {
+function Slogan() {
+  const content = useSelector((state) => state.data.main.content);
+
   return (
     <div>
       <h4 className="font-weight-bold">{content.slogan}</h4>
@@ -11,9 +13,5 @@ function Slogan({ content }) {
     </div>
   );
 }
-
-Slogan.propTypes = {
-  content: PropTypes.shape.isRequired,
-};
 
 export default Slogan;

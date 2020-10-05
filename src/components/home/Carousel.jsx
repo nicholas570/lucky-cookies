@@ -1,32 +1,29 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-import Carousel from 'react-bootstrap/Carousel';
+import { Container, Carousel } from 'react-bootstrap';
 
-import { Container } from 'react-bootstrap';
+function CarouselComponent() {
+  const images = useSelector((state) => state.data.main.carousel);
 
-function CarouselComponent({ pics }) {
   return (
     <Container fluid className="p-3 p-md-5">
       <Carousel>
-        {pics.map((pic) => {
+        {images.map((item) => {
           return (
-            <Carousel.Item key={pic.id}>
+            <Carousel.Item key={item.id}>
               <img
                 className="d-block w-100 h-75"
-                src={`/assets/images/caroussel/${pic.image}`}
-                alt={pic.id}
+                src={`/assets/images/caroussel/${item.image}`}
+                alt={item.id}
               />
             </Carousel.Item>
           );
         })}
       </Carousel>
+      )
     </Container>
   );
 }
-
-CarouselComponent.propTypes = {
-  pics: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
 
 export default CarouselComponent;

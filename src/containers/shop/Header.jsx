@@ -1,29 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Rules from '../../components/shop/Rules';
 import SalePoints from '../../components/shop/SalePoints';
 
-function Header({ shop, goods }) {
+function Header() {
   return (
     <Container className="mb-3">
       <Row className="d-flex flex-column flex-md-row">
         <Col md={8}>
-          <Rules shop={shop} goods={goods} />
+          <Rules />
         </Col>
         <Col md={4}>
-          <SalePoints shop={shop} />
+          <SalePoints />
         </Col>
       </Row>
     </Container>
   );
 }
-
-Header.propTypes = {
-  shop: PropTypes.shape.isRequired,
-  goods: PropTypes.shape.isRequired,
-};
 
 export default Header;

@@ -1,28 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Slogan from '../../components/home/Content_Slogan';
 import TextContent from '../../components/home/Content_Text';
 
-function Content({ content }) {
+function Content() {
   return (
     <Container className="p-5">
       <Row className="d-flex flex-column flex-md-row">
         <Col className="col-sm-12 col-md-3">
-          <Slogan content={content} />
+          <Slogan />
         </Col>
         <Col className="col-sm-12 col-md-5 offset-md-2 mt-5">
-          <TextContent content={content} />
+          <TextContent />
         </Col>
       </Row>
     </Container>
   );
 }
-
-Content.propTypes = {
-  content: PropTypes.shape.isRequired,
-};
 
 export default Content;

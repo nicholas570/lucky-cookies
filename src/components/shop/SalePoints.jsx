@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-function SalePoints({ shop }) {
+function SalePoints() {
+  const { shop } = useSelector((state) => state.data);
   return (
     <>
       <p className="text-left font-weight-bold text-danger mb-3">
@@ -19,7 +20,4 @@ function SalePoints({ shop }) {
   );
 }
 
-SalePoints.propTypes = {
-  shop: PropTypes.shape.isRequired,
-};
 export default SalePoints;

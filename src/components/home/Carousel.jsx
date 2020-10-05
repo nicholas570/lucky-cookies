@@ -21,7 +21,6 @@ function CarouselComponent() {
           );
         })}
       </Carousel>
-      )
     </Container>
   );
 }

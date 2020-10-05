@@ -8,7 +8,7 @@ import Block from '../containers/product/Block';
 
 function Product() {
   const { id } = useParams();
-  const { product } = useSelector((state) => state.data.shop.products[id]);
+  const product = useSelector((state) => state.data.shop.products[id]);
 
   return (
     <div>

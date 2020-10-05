@@ -1,4 +1,4 @@
-# Responsive website for Lucky Cookies
+# Lucky Cookies Website
 
 ### Why?
 
@@ -13,9 +13,8 @@ I thought this website as a template. All the data and images (keep the same fil
 - React.js
 - React router dom
 - Hooks API
+- Redux
 - PropTypes
-- Express
-- nodemailer
 - Bootstrap 4
 - Sass / Node-Sass
 - Eslint / Prettier and Husky
@@ -25,10 +24,7 @@ I thought this website as a template. All the data and images (keep the same fil
 ### Todo:
 
 - Create a layout and layouted routes
-- Build shop & product pages
 - Fix PropTypes
-- TESTS!!!
-- Handle state globally
 
 ### Preview here:
 

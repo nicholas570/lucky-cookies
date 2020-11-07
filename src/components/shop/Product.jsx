@@ -20,7 +20,7 @@ function Product({ cookie }) {
         </Link>
         <Card.Body>
           <Card.Title className="text-left">{cookie.name}</Card.Title>
-          <Card.Text className="text-left">{cookie.price}</Card.Text>
+          <Card.Text className="text-left">{`${cookie.price} €`}</Card.Text>
         </Card.Body>
       </Card>
     </Col>

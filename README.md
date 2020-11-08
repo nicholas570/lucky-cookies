@@ -1,12 +1,17 @@
 # Lucky Cookies Website
 
+![image](./public/assets/images/readme.png?raw=true)
+
 ### Why?
 
 Because I love cookies.
 
 ### How?
 
-I thought this website as a template. All the data and images (keep the same file name!) can be modified in public/data.json file.
+I thought this website as a template. All the data and images can be modified in public/data.json file.
+
+Switch to server branch for back end relationship.
+([Back end repository ](https://github.com/nicholas570/lucky-cookies-back))
 
 ### What I used:
 
@@ -23,8 +28,8 @@ I thought this website as a template. All the data and images (keep the same fil
 
 ### Todo:
 
-- Create a layout and layouted routes
-- Fix PropTypes
+- Admin interface
+- Make contact form active
 
 ### Preview here:
 

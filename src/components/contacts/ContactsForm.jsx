@@ -20,7 +20,7 @@ function ContactsForm() {
     const form = e.currentTarget;
     if (form.checkValidity()) {
       axios
-        .post('/send', { ...state })
+        .post('http://localhost:4000/contacts', { ...state })
         .then((res) => {
           setResult(res.data);
           setState({

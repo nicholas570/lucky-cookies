@@ -10,7 +10,7 @@ function Product() {
 
   return (
     <div>
-      <Block product={cookies[id]} />
+      <Block product={cookies[id - 1]} />
     </div>
   );
 }

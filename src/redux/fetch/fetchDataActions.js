@@ -19,10 +19,16 @@ export const fetchDataFailure = (err) => {
 export const fetchData = () => {
   return (dispatch) => {
     axios
-      .get('/data.json')
-      .then(({ data }) => {
-        dispatch(fetchDataSuccess(data));
-      })
+      .all([
+        axios.get('/data.json'),
+        axios.get('https://lucky-cookies.herokuapp.com/api/cookies'),
+      ])
+      .then(
+        axios.spread((json, db) => {
+          const data = { ...json.data, cookies: [...db.data] };
+          dispatch(fetchDataSuccess(data));
+        })
+      )
       .catch((err) => {
         dispatch(fetchDataFailure(err.message));
       });

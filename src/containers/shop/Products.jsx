@@ -6,12 +6,12 @@ import { Container, Row } from 'react-bootstrap';
 import Product from '../../components/shop/Product';
 
 function Products() {
-  const { products } = useSelector((state) => state.data.shop);
+  const { cookies } = useSelector((state) => state.data);
   return (
     <Container>
       <Row>
-        {products.map((product) => {
-          return <Product product={product} key={product.id} />;
+        {cookies.map((cookie) => {
+          return <Product cookie={cookie} key={cookie.id} />;
         })}
       </Row>
     </Container>

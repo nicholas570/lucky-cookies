@@ -9,7 +9,7 @@ function ProductImage({ product }) {
   return (
     <Col className="col-md-6 offset-md-1">
       <Image
-        src={`/assets/images/shop/${product.pic}`}
+        src={`/assets/images/shop/${product.image}`}
         alt={product.name}
         className="img-fluid"
         id={style.image}

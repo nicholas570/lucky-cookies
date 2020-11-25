@@ -7,20 +7,20 @@ import Card from 'react-bootstrap/Card';
 
 import style from '../../css/shop/cardImage.module.css';
 
-function Product({ product }) {
+function Product({ cookie }) {
   return (
     <Col md={4} className="p-0 mb-3">
       <Card style={{ width: '100' }} className="border border-0 px-2">
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/${cookie.id}`}>
           <Card.Img
             variant="top"
             className={style.image}
-            src={`/assets/images/shop/${product.pic}`}
+            src={`/assets/images/shop/${cookie.image}`}
           />
         </Link>
         <Card.Body>
-          <Card.Title className="text-left">{product.name}</Card.Title>
-          <Card.Text className="text-left">{product.price}</Card.Text>
+          <Card.Title className="text-left">{cookie.name}</Card.Title>
+          <Card.Text className="text-left">{`${cookie.price} €`}</Card.Text>
         </Card.Body>
       </Card>
     </Col>
@@ -28,7 +28,7 @@ function Product({ product }) {
 }
 
 Product.propTypes = {
-  product: PropTypes.shape.isRequired,
+  cookie: PropTypes.shape.isRequired,
 };
 
 export default Product;

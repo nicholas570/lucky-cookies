@@ -21,7 +21,7 @@ export const fetchData = () => {
     axios
       .all([
         axios.get('/data.json'),
-        axios.get('http://localhost:4000/api/cookies'),
+        axios.get('https://lucky-cookies.herokuapp.com/api/cookies'),
       ])
       .then(
         axios.spread((json, db) => {

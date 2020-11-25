@@ -20,7 +20,7 @@ function ContactsForm() {
     const form = e.currentTarget;
     if (form.checkValidity()) {
       axios
-        .post('http://localhost:4000/contacts', { ...state })
+        .post('https://lucky-cookies.herokuapp.com/contacts', { ...state })
         .then((res) => {
           setResult(res.data);
           setState({

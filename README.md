@@ -2,17 +2,15 @@
 
 ![image](./public/assets/images/readme.png?raw=true)
 
-### Why?
-
-Because I love cookies.
+Lucky Cookies is coffee shop serving local food and the world best cookies.
 
 ### How?
 
-I thought this website as a template. All the data and images can be modified in public/data.json file.
+I designed this website as a template. All the data and images can be modified in public/data.json file.
 
 ([Back end repository ](https://github.com/nicholas570/lucky-cookies-back))
 
-### What I used:
+### Techs:
 
 - React.js
 - React router dom
@@ -28,7 +26,8 @@ I thought this website as a template. All the data and images can be modified in
 ### Todo:
 
 - Admin interface
-- Make contact form active
+- Make newsletter form active
+- shipping cart
 
 ### Preview here:
 

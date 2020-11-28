@@ -26,8 +26,8 @@ I designed this website as a template. All the data and images can be modified i
 ### Todo:
 
 - Admin interface
-- Make newsletter form active
-- shipping cart
+- Handle newsletter and contact forms submission with redux
+- Shipping cart
 
 ### Preview here:
 

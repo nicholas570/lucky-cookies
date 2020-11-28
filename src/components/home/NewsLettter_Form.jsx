@@ -27,7 +27,9 @@ function NewsLetterForm() {
     const form = e.currentTarget;
     if (form.checkValidity()) {
       axios
-        .post('https://lucky-cookies.herokuapp.com/newsletter', { ...state })
+        .post('https://lucky-cookies.herokuapp.com/api/newsletter', {
+          ...state,
+        })
         .then((res) => {
           setResult(res.data);
           setState({

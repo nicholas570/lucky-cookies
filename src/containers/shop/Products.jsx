@@ -6,7 +6,7 @@ import { Container, Row } from 'react-bootstrap';
 import Product from '../../components/shop/Product';
 
 function Products() {
-  const { cookies } = useSelector((state) => state.data);
+  const { cookies } = useSelector((state) => state.infos.data);
   return (
     <Container>
       <Row>

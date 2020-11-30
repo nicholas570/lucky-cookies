@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { Form, Col, Row, Button } from 'react-bootstrap';
 
+import { postNewsLetterForm } from '../../redux';
+
 function NewsLetterForm() {
+  const dispatch = useDispatch();
+  const { message } = useSelector((state) => state.newsLetterForm);
   const [validated, setValidated] = useState(false);
-  const [result, setResult] = useState(null);
   const [state, setState] = useState({
     firstName: '',
     lastName: '',
@@ -26,21 +29,12 @@ function NewsLetterForm() {
     e.stopPropagation();
     const form = e.currentTarget;
     if (form.checkValidity()) {
-      axios
-        .post('https://lucky-cookies.herokuapp.com/api/newsletter', {
-          ...state,
-        })
-        .then((res) => {
-          setResult(res.data);
-          setState({
-            firstName: '',
-            lastName: '',
-            email: '',
-          });
-        })
-        .catch(() => {
-          setResult({ success: false, message: 'Something went wrong' });
-        });
+      dispatch(postNewsLetterForm(state));
+      setState({
+        firstName: '',
+        lastName: '',
+        email: '',
+      });
     }
     setValidated(true);
   };
@@ -94,7 +88,7 @@ function NewsLetterForm() {
           Sign Up
         </Button>
       </Form>
-      {result && <p>{result.message}</p>}
+      {message && <p>{message}</p>}
     </div>
   );
 }

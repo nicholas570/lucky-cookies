@@ -1,14 +1,19 @@
+import { combineReducers, createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
+
 import fetchDataReducer from './fetch/fetchDataReducer';
+import postContactFormReducer from './forms/contact/postContactFormReducer';
+import postNewsLetterFormReducer from './forms/newsletter/postNewsLetterFormReducer';
 
-const redux = require('redux');
-const thunk = require('redux-thunk').default;
-
-const { applyMiddleware } = redux;
-const { createStore } = redux;
+const rootReducer = combineReducers({
+  infos: fetchDataReducer,
+  contactForm: postContactFormReducer,
+  newsLetterForm: postNewsLetterFormReducer,
+});
 
 const store = createStore(
-  fetchDataReducer,
+  rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
 );
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Offers() {
-  const offers = useSelector((state) => state.data.main.offers);
+  const offers = useSelector((state) => state.infos.data.main.offers);
   return (
     <div className="my-5 mt-md-0">
       {offers.map((offer) => {

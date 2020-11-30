@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Container, Carousel } from 'react-bootstrap';
 
 function CarouselComponent() {
-  const images = useSelector((state) => state.data.main.carousel);
+  const images = useSelector((state) => state.infos.data.main.carousel);
 
   return (
     <Container fluid className="p-3 p-md-5">

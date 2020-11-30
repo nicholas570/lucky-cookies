@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Contents() {
-  const { menu } = useSelector((state) => state.data);
+  const { menu } = useSelector((state) => state.infos.data);
   return (
     <Container className="text-left">
       <Row className="mb-3">

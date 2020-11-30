@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -24,42 +23,30 @@ function LayoutedRoute({ component: Component, layout: Layout, ...rest }) {
 }
 
 function Routerz() {
-  const isLoading = useSelector((state) => state.loading);
-
   return (
     <div>
-      {!isLoading && (
-        <Router>
-          <Switch>
-            <LayoutedRoute
-              exact
-              path="/"
-              component={Home}
-              layout={LayoutedView}
-            />
-            <LayoutedRoute
-              path="/menu"
-              component={Menu}
-              layout={LayoutedView}
-            />
-            <LayoutedRoute
-              path="/shop"
-              component={Shop}
-              layout={LayoutedView}
-            />
-            <LayoutedRoute
-              path="/product/:id"
-              component={Product}
-              layout={LayoutedView}
-            />
-            <LayoutedRoute
-              path="/careers"
-              component={Careers}
-              layout={LayoutedView}
-            />
-          </Switch>
-        </Router>
-      )}
+      <Router>
+        <Switch>
+          <LayoutedRoute
+            exact
+            path="/"
+            component={Home}
+            layout={LayoutedView}
+          />
+          <LayoutedRoute path="/menu" component={Menu} layout={LayoutedView} />
+          <LayoutedRoute path="/shop" component={Shop} layout={LayoutedView} />
+          <LayoutedRoute
+            path="/product/:id"
+            component={Product}
+            layout={LayoutedView}
+          />
+          <LayoutedRoute
+            path="/careers"
+            component={Careers}
+            layout={LayoutedView}
+          />
+        </Switch>
+      </Router>
     </div>
   );
 }

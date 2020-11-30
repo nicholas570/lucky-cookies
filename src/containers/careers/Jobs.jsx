@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Job from '../../components/careers/Job';
 
 function Jobs() {
-  const { jobs } = useSelector((state) => state.data.careers);
+  const { jobs } = useSelector((state) => state.infos.data.careers);
   return (
     <Container fluid className="p-5">
       <Row>

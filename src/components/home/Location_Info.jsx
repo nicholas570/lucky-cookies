@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 function Info() {
   const { address, openings, contacts } = useSelector(
-    (state) => state.data.main
+    (state) => state.infos.data.main
   );
 
   return (

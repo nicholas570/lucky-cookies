@@ -19,7 +19,7 @@ export const postContactFormFailure = (err) => {
 export const postContactForm = (state) => {
   return (dispatch) => {
     axios
-      .post('https://lucky-cookies.herokuapp.com/api/contacts', { ...state })
+      .post('http://localhost:4000/api/contacts', { ...state })
       .then(({ data }) => dispatch(postContactFormSuccess(data)))
       .catch((err) => {
         dispatch(postContactFormFailure(err.message));

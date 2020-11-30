@@ -1,20 +1,20 @@
 import {
-  POST_FORM_SUCCESS,
-  POST_FORM_FAILURE,
+  POST_NL_FORM_SUCCESS,
+  POST_NL_FORM_FAILURE,
 } from './postNewsLetterFormTypes';
 
 const axios = require('axios');
 
 export const postNewsLetterFormSuccess = (data) => {
   return {
-    type: POST_FORM_SUCCESS,
+    type: POST_NL_FORM_SUCCESS,
     payload: data,
   };
 };
 
 export const postNewsLetterFormFailure = (err) => {
   return {
-    type: POST_FORM_FAILURE,
+    type: POST_NL_FORM_FAILURE,
     payload: err,
   };
 };

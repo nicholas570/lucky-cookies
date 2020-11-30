@@ -12,7 +12,9 @@ import Modal from '../contacts/Modal';
 import style from '../../css/home/Footer.module.css';
 
 function Footer() {
-  const { address, brand, logo } = useSelector((state) => state.data.main);
+  const { address, brand, logo } = useSelector(
+    (state) => state.infos.data.main
+  );
 
   return (
     <Container fluid className="p-5" id={style.BgColor}>

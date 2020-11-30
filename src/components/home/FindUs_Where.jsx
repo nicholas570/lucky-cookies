@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Where() {
-  const content = useSelector((state) => state.data.main.content);
+  const content = useSelector((state) => state.infos.data.main.content);
 
   return (
     <div className="text-left mb-5">

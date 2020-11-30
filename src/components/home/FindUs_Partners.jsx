@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Partners() {
-  const { partners } = useSelector((state) => state.data);
+  const { partners } = useSelector((state) => state.infos.data);
 
   return (
     <div className="mb-5">

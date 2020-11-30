@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Address() {
-  const address = useSelector((state) => state.data.main.address);
+  const address = useSelector((state) => state.infos.data.main.address);
 
   return (
     <div className="mt-3 mt-md-0">

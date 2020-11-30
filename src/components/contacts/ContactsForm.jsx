@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { Col, Form, Button } from 'react-bootstrap';
 
+import { postContactForm } from '../../redux';
+
 function ContactsForm() {
+  const dispatch = useDispatch();
+  const { message } = useSelector((state) => state.contactForm);
+
   const [validated, setValidated] = useState(false);
   const [state, setState] = useState({
     firstName: '',
@@ -12,28 +17,20 @@ function ContactsForm() {
     subject: '',
     message: '',
   });
-  const [result, setResult] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
     const form = e.currentTarget;
     if (form.checkValidity()) {
-      axios
-        .post('https://lucky-cookies.herokuapp.com/api/contacts', { ...state })
-        .then((res) => {
-          setResult(res.data);
-          setState({
-            firstName: '',
-            lastName: '',
-            email: '',
-            subject: '',
-            message: '',
-          });
-        })
-        .catch(() => {
-          setResult({ success: false, message: 'Something went wrong' });
-        });
+      dispatch(postContactForm(state));
+      setState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
     }
     setValidated(true);
   };
@@ -49,7 +46,7 @@ function ContactsForm() {
 
   return (
     <>
-      {result && <p>{result.message}</p>}
+      {message && <p>{message}</p>}
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Form.Row>
           <Form.Group as={Col} md="6" controlId="firstName">

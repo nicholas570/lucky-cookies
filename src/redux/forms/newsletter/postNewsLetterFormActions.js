@@ -22,7 +22,7 @@ export const postNewsLetterFormFailure = (err) => {
 export const postNewsLetterForm = (state) => {
   return (dispatch) => {
     axios
-      .post('https://lucky-cookies.herokuapp.com/api/newsletter', { ...state })
+      .post('http://localhost:4000/api/newsletter', { ...state })
       .then(({ data }) => dispatch(postNewsLetterFormSuccess(data)))
       .catch((err) => {
         dispatch(postNewsLetterFormFailure(err.message));

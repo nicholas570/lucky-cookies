@@ -22,7 +22,7 @@ export const postContactForm = (state) => {
       .post('https://lucky-cookies.herokuapp.com/api/contacts', { ...state })
       .then(({ data }) => dispatch(postContactFormSuccess(data)))
       .catch((err) => {
-        dispatch(postContactFormFailure(err.message));
+        dispatch(postContactFormFailure(err.response.data));
       });
   };
 };

@@ -25,7 +25,7 @@ export const postNewsLetterForm = (state) => {
       .post('https://lucky-cookies.herokuapp.com/api/newsletter', { ...state })
       .then(({ data }) => dispatch(postNewsLetterFormSuccess(data)))
       .catch((err) => {
-        dispatch(postNewsLetterFormFailure(err.message));
+        dispatch(postNewsLetterFormFailure(err.response.data));
       });
   };
 };

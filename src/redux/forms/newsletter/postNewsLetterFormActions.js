@@ -25,7 +25,7 @@ export const postNewsLetterForm = (state) => {
       .post('http://localhost:4000/api/newsletter', { ...state })
       .then(({ data }) => dispatch(postNewsLetterFormSuccess(data)))
       .catch((err) => {
-        dispatch(postNewsLetterFormFailure(err.message));
+        dispatch(postNewsLetterFormFailure(err.response.data));
       });
   };
 };

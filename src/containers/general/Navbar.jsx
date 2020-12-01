@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 import {
   Collapse,
   Navbar,
@@ -19,6 +21,7 @@ import style from '../../css/home/Navbar.module.css';
 function NavbarComponent() {
   const main = useSelector((state) => state.infos.data.main);
   const [isOpen, setIsOpen] = useState(false);
+  const [isEmpty, setIsEmpty] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -57,6 +60,17 @@ function NavbarComponent() {
             <NavItem>
               <NavLink href="https://www.instagram.com/">
                 <FontAwesomeIcon icon={faInstagram} />
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">
+                <FontAwesomeIcon
+                  style={{
+                    color: !isEmpty && 'red',
+                  }}
+                  icon={faShoppingCart}
+                  onClick={() => setIsEmpty(!isEmpty)}
+                />
               </NavLink>
             </NavItem>
           </Nav>

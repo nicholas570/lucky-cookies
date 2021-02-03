@@ -8,6 +8,7 @@ import Shop from './views/Shop';
 import Menu from './views/Menu';
 import Careers from './views/Careers';
 import Product from './views/Product';
+import Cart from './views/Cart';
 
 function LayoutedRoute({ component: Component, layout: Layout, ...rest }) {
   return (
@@ -40,6 +41,7 @@ function Routerz() {
             component={Product}
             layout={LayoutedView}
           />
+          <LayoutedRoute path="/cart" component={Cart} layout={LayoutedView} />
           <LayoutedRoute
             path="/careers"
             component={Careers}

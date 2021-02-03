@@ -21,7 +21,6 @@ import style from '../../css/home/Navbar.module.css';
 function NavbarComponent() {
   const main = useSelector((state) => state.infos.data.main);
   const [isOpen, setIsOpen] = useState(false);
-  const [isEmpty, setIsEmpty] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -63,14 +62,8 @@ function NavbarComponent() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">
-                <FontAwesomeIcon
-                  style={{
-                    color: !isEmpty && 'red',
-                  }}
-                  icon={faShoppingCart}
-                  onClick={() => setIsEmpty(!isEmpty)}
-                />
+              <NavLink href="/cart">
+                <FontAwesomeIcon icon={faShoppingCart} />
               </NavLink>
             </NavItem>
           </Nav>

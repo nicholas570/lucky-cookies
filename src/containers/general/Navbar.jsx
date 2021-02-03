@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import {
   Collapse,
@@ -20,6 +19,9 @@ import style from '../../css/home/Navbar.module.css';
 
 function NavbarComponent() {
   const main = useSelector((state) => state.infos.data.main);
+  const {
+    cookies: { data },
+  } = useSelector((state) => state);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -62,8 +64,8 @@ function NavbarComponent() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/cart">
-                <FontAwesomeIcon icon={faShoppingCart} />
+              <NavLink className="font-weight-bold" href="/cart">
+                {data.length > 0 ? `Cart (${data.length})` : 'Cart'}
               </NavLink>
             </NavItem>
           </Nav>

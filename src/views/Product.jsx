@@ -6,11 +6,13 @@ import Block from '../containers/product/Block';
 
 function Product() {
   const { id } = useParams();
-  const { cookies } = useSelector((state) => state.infos.data);
+  const {
+    cookies: { data },
+  } = useSelector((state) => state);
 
   return (
     <div>
-      <Block product={cookies[id - 1]} />
+      <Block product={data[id - 1]} />
     </div>
   );
 }

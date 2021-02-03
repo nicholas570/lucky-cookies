@@ -1,4 +1,7 @@
-import { FETCH_DATA_SUCCESS, FETCH_DATA_FAILURE } from './fetchDataTypes';
+import {
+  FETCH_COOKIES_SUCCESS,
+  FETCH_COOKIES_FAILURE,
+} from './fecthCookiesTypes';
 
 const initialState = {
   loading: true,
@@ -6,15 +9,15 @@ const initialState = {
   error: '',
 };
 
-const fetchDataReducer = (state = initialState, action) => {
+const fetchCookiesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_DATA_SUCCESS:
+    case FETCH_COOKIES_SUCCESS:
       return {
         loading: false,
         data: action.payload,
         err: '',
       };
-    case FETCH_DATA_FAILURE:
+    case FETCH_COOKIES_FAILURE:
       return {
         loading: false,
         data: {},
@@ -25,4 +28,4 @@ const fetchDataReducer = (state = initialState, action) => {
   }
 };
 
-export default fetchDataReducer;
+export default fetchCookiesReducer;

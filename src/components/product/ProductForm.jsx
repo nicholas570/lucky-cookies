@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { Link } from 'react-router-dom';
 import { Col, Form, Button } from 'react-bootstrap';
@@ -14,6 +14,9 @@ import ProductIngredients from './ProductIngredients';
 function ProductForm({ product }) {
   const [quantity, setQuantity] = useState(1);
   const [success, setSuccess] = useState(false);
+  const {
+    cart: { err, data },
+  } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -22,13 +25,18 @@ function ProductForm({ product }) {
     setQuantity(value);
   };
 
+  const isAlreadyInCart =
+    data.length > 1
+      ? data.map((item) => item.cookieId).includes(product.id)
+      : false;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
     const form = e.currentTarget;
     if (form.checkValidity()) {
       dispatch(addItem({ cookieId: product.id, cartId: 3, quantity }));
-      setSuccess(true);
+      if (!err) setSuccess(true);
     }
   };
 
@@ -62,10 +70,13 @@ function ProductForm({ product }) {
           className="btn btn-outline-danger"
           id={style.add}
           type="submit"
+          disabled={isAlreadyInCart}
         >
           {success ? 'ADDED' : 'ADD'}
         </Button>
       </Form>
+
+      {isAlreadyInCart && <p>Cookie already selected</p>}
 
       <Link to="/shop">
         <ArrowLeft />

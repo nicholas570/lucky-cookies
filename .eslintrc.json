@@ -23,6 +23,7 @@
       {
         "exceptions": ["Route", "Component", "Layout", "CartItem"]
       }
-    ]
+    ],
+    "no-nested-ternary": "off"
   }
 }

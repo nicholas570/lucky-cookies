@@ -1,15 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 
 import { Button, Col, Form } from 'react-bootstrap/';
 
+import { removeItem } from '../../redux';
+
 import style from '../../css/cart/cartItem.module.css';
 
-function CartItem({ image, name, price, quantity }) {
+function CartItem({ image, name, price, quantity, cookieId }) {
+  const dispatch = useDispatch();
+
   return (
     <>
       <Col className="col-6 d-flex justify-content-start align-items-center">
-        <Button className="bg-transparent text-muted border-0">x</Button>
+        <Button
+          className="bg-transparent text-muted border-0"
+          onClick={() => dispatch(removeItem({ cartId: 3, cookieId }))}
+        >
+          x
+        </Button>
         <div
           className={style.img}
           style={{
@@ -44,6 +54,7 @@ CartItem.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   quantity: PropTypes.number.isRequired,
+  cookieId: PropTypes.number.isRequired,
 };
 
 export default CartItem;

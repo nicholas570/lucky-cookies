@@ -1,5 +1,10 @@
 import { FETCH_CART_SUCCESS, FETCH_CART_FAILURE } from './fetch/fetchCartTypes';
-import { ADD_ITEM_SUCCESS, ADD_ITEM_FAILURE } from './item/itemTypes';
+import {
+  ADD_ITEM_SUCCESS,
+  ADD_ITEM_FAILURE,
+  REMOVE_ITEM_SUCCESS,
+  REMOVE_ITEM_FAILURE,
+} from './item/itemTypes';
 
 const initialState = {
   loading: true,
@@ -24,11 +29,21 @@ const CartReducer = (state = initialState, action) => {
     case ADD_ITEM_SUCCESS:
       return {
         loading: false,
-        data: [...state.data, action.payload],
+        data:
+          state.data.length >= 1
+            ? [...state.data, action.payload]
+            : [action.payload],
+        err: '',
+      };
+    case REMOVE_ITEM_SUCCESS:
+      return {
+        loading: false,
+        data: state.data.filter((d) => d.cookieId !== action.payload.cookieId),
         err: '',
       };
     case ADD_ITEM_FAILURE:
-      return { loading: false, data: [...state.data], err: action.payload };
+    case REMOVE_ITEM_FAILURE:
+      return { loading: false, data: state.data, err: action.payload };
     default:
       return state;
   }

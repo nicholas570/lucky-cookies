@@ -6,7 +6,7 @@ import { Container, Row } from 'react-bootstrap';
 import Product from '../../components/shop/Product';
 import Loader from '../../components/home/Loader';
 
-import { fetchCookies } from '../../redux/fetch cookies/fetchCookiesActions';
+import { fetchCookies } from '../../redux';
 
 function Products() {
   const dispatch = useDispatch();

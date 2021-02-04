@@ -65,7 +65,7 @@ function NavbarComponent() {
             </NavItem>
             <NavItem>
               <NavLink className="font-weight-bold" href="/cart">
-                {data.length > 0 ? `Cart (${data.length})` : 'Cart'}
+                {data.length > 0 ? `Cart(${data.length})` : 'Cart'}
               </NavLink>
             </NavItem>
           </Nav>

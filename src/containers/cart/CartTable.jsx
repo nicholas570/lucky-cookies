@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { Container, Row } from 'react-bootstrap';
 import { Table } from 'reactstrap';
 
+import { fetchCart } from '../../redux';
+
+import Loader from '../../components/home/Loader';
 import CartItem from '../../components/cart/CartItem';
 import TableHeader from '../../components/cart/TableHeader';
 
-const arr = [1, 2, 3];
+const id = 3;
 
 function CartTable() {
+  const dispatch = useDispatch();
+  const { loading, data: items } = useSelector((state) => state.cart);
+  useEffect(() => {
+    dispatch(fetchCart(id));
+  }, []);
+
   return (
     <Container>
       <Table>
@@ -16,16 +26,20 @@ function CartTable() {
           <TableHeader />
         </Row>
         <hr />
-        {arr.map((el) => {
-          return (
-            <div key={el}>
-              <Row>
-                <CartItem />
-              </Row>
-              <hr />
-            </div>
-          );
-        })}
+        {loading ? (
+          <Loader />
+        ) : (
+          items.map((item) => {
+            return (
+              <div key={item.cookieId}>
+                <Row>
+                  <CartItem {...item} />
+                </Row>
+                <hr />
+              </div>
+            );
+          })
+        )}
       </Table>
     </Container>
   );

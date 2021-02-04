@@ -21,7 +21,7 @@
     "react/jsx-props-no-spreading": [
       2,
       {
-        "exceptions": ["Route", "Component", "Layout"]
+        "exceptions": ["Route", "Component", "Layout", "CartItem"]
       }
     ]
   }

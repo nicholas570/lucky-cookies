@@ -1,7 +1,7 @@
 import {
   FETCH_COOKIES_SUCCESS,
   FETCH_COOKIES_FAILURE,
-} from './fecthCookiesTypes';
+} from './fetchCookiesTypes';
 
 const axios = require('axios');
 

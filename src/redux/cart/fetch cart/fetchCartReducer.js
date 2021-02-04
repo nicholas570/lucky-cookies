@@ -1,7 +1,4 @@
-import {
-  FETCH_COOKIES_SUCCESS,
-  FETCH_COOKIES_FAILURE,
-} from './fetchCookiesTypes';
+import { FETCH_CART_SUCCESS, FETCH_CART_FAILURE } from './fetchCartTypes';
 
 const initialState = {
   loading: true,
@@ -9,15 +6,15 @@ const initialState = {
   error: '',
 };
 
-const fetchCookiesReducer = (state = initialState, action) => {
+const fetchCartReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_COOKIES_SUCCESS:
+    case FETCH_CART_SUCCESS:
       return {
         loading: false,
         data: action.payload,
         err: '',
       };
-    case FETCH_COOKIES_FAILURE:
+    case FETCH_CART_FAILURE:
       return {
         loading: false,
         data: {},
@@ -28,4 +25,4 @@ const fetchCookiesReducer = (state = initialState, action) => {
   }
 };
 
-export default fetchCookiesReducer;
+export default fetchCartReducer;

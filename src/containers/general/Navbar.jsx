@@ -20,7 +20,7 @@ import style from '../../css/home/Navbar.module.css';
 function NavbarComponent() {
   const main = useSelector((state) => state.infos.data.main);
   const {
-    cookies: { data },
+    cart: { data },
   } = useSelector((state) => state);
   const [isOpen, setIsOpen] = useState(false);
 

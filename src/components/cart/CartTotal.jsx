@@ -11,14 +11,22 @@ function CartTotal() {
 
   useEffect(() => {
     if (items.length) {
-      setTotal(items.reduce((acc, current) => acc.price + current.price));
+      setTotal(
+        items
+          .reduce((acc, current) => {
+            return acc + current.price;
+          }, 0)
+          .toFixed(2)
+      );
     }
   }, [items]);
 
   return (
     <Container>
       <Row className="d-flex justify-content-end p-sm-3">
-        <p className="font-weight-bold">{`Subtotal ${total}€`}</p>
+        <p className="font-weight-bold">
+          {items.length && `Subtotal ${total}€`}
+        </p>
       </Row>
     </Container>
   );

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 
 import { Link } from 'react-router-dom';
 import { Col, Form, Button } from 'react-bootstrap';
 import { ArrowLeft } from 'react-bootstrap-icons';
+
+import { addItem } from '../../redux';
 
 import style from '../../css/product/productForm.module.css';
 import ProductIngredients from './ProductIngredients';
@@ -11,6 +14,7 @@ import ProductIngredients from './ProductIngredients';
 function ProductForm({ product }) {
   const [quantity, setQuantity] = useState(1);
   const [success, setSuccess] = useState(false);
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -23,6 +27,7 @@ function ProductForm({ product }) {
     e.stopPropagation();
     const form = e.currentTarget;
     if (form.checkValidity()) {
+      dispatch(addItem({ cookieId: product.id, cartId: 3, quantity }));
       setSuccess(true);
     }
   };

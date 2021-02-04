@@ -17,8 +17,7 @@ function CartTable() {
           <TableHeader />
         </Row>
         <hr />
-        {items &&
-          items.length &&
+        {items && items.length ? (
           items.map((item) => {
             return (
               <div key={item.cookieId}>
@@ -28,7 +27,10 @@ function CartTable() {
                 <hr />
               </div>
             );
-          })}
+          })
+        ) : (
+          <p>No items yet :(</p>
+        )}
       </Table>
     </Container>
   );

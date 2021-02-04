@@ -18,7 +18,6 @@ const CartReducer = (state = initialState, action) => {
       return {
         loading: false,
         data: action.payload,
-        err: '',
       };
     case FETCH_CART_FAILURE:
       return {
@@ -33,13 +32,13 @@ const CartReducer = (state = initialState, action) => {
           state.data.length >= 1
             ? [...state.data, action.payload]
             : [action.payload],
-        err: '',
       };
     case REMOVE_ITEM_SUCCESS:
       return {
         loading: false,
-        data: state.data.filter((d) => d.cookieId !== action.payload.cookieId),
-        err: '',
+        data: state.data.filter(
+          (d) => d.cookieId !== parseInt(action.payload.cookieId, 10)
+        ),
       };
     case ADD_ITEM_FAILURE:
     case REMOVE_ITEM_FAILURE:

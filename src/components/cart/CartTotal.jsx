@@ -14,7 +14,7 @@ function CartTotal() {
       setTotal(
         items
           .reduce((acc, current) => {
-            return acc + current.price;
+            return acc + current.price * current.quantity;
           }, 0)
           .toFixed(2)
       );

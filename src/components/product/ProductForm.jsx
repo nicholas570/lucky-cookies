@@ -26,7 +26,7 @@ function ProductForm({ product }) {
   };
 
   const isAlreadyInCart =
-    data.length > 1
+    data.length >= 1
       ? data.map((item) => item.cookieId).includes(product.id)
       : false;
 

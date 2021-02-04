@@ -28,10 +28,7 @@ const CartReducer = (state = initialState, action) => {
     case ADD_ITEM_SUCCESS:
       return {
         loading: false,
-        data:
-          state.data.length >= 1
-            ? [...state.data, action.payload]
-            : [action.payload],
+        data: action.payload,
       };
     case REMOVE_ITEM_SUCCESS:
       return {

@@ -25,7 +25,7 @@ export const addItem = (data) => {
   return async (dispatch) => {
     try {
       const result = await axios.post(
-        `http://localhost:4000/api/carts/${data.cartId}`,
+        `https://lucky-cookies.herokuapp.com/api/carts/${data.cartId}`,
         data
       );
       dispatch(addItemSuccess(result.data.result));
@@ -53,7 +53,7 @@ export const removeItem = (data) => {
   return async (dispatch) => {
     try {
       const result = await axios.delete(
-        `http://localhost:4000/api/carts/${data.cartId}/${data.cookieId}`
+        `https://lucky-cookies.herokuapp.com/api/carts/${data.cartId}/${data.cookieId}`
       );
       dispatch(removeItemSuccess(result.data.result));
     } catch (err) {

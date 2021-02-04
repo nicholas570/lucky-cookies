@@ -19,7 +19,9 @@ export const fetchCartFailure = (err) => {
 export const fetchCart = (id) => {
   return async (dispatch) => {
     try {
-      const result = await axios.get(`http://localhost:4000/api/carts/${id}`);
+      const result = await axios.get(
+        `https://lucky-cookies.herokuapp.com/api/carts/${id}`
+      );
       dispatch(fetchCartSuccess(result.data.result));
     } catch (err) {
       dispatch(fetchCartFailure(err.message));
